@@ -144,8 +144,8 @@ nav {
 .teaser-image {
   height: 150px;
   width: 150px;
-  @include border-radius( 5% );
-  @include brightness(95%);
+  @include border-radius( 3px );
+  @include brightness(97%);
   @include box-shadow(0px, 0px, 1px, $primary-contrast-color);  
   border: 1px solid $primary-contrast-color;
 }
