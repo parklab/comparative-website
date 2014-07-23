@@ -1,8 +1,10 @@
 // Typography
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+
 $sans-serif: $helvetica;
 $serif: $georgia;
 $base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$header-font-family: Questrial, helvetica, sans-serif;
 
 // Sizes
 $base-font-size: 1em;

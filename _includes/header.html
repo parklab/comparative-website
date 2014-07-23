@@ -1,14 +1,26 @@
+<div>
 <header>
-    <section>
-      <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-      <navigation>
-        <div class="trigger">
-          {% for page in site.pages %}
-            {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-          {% endfor %}
+      <div class="logos">
+        <img class="logo-image" src="{{ "/assets/images/logos.png" | prepend: site.baseurl }}"/>
+      </div>
+      <nav class="navigation">
+        <div class="navigation-title">
+        <a href="{{ site.baseurl }}/">{{ site.title }}</a>
         </div>
-      </navigation>
-    </section>
+
+        <div class="navigation-buttons">
+          {% for page in site.pages %}
+            {% if page.subproject %}
+            <div class="navigation-button">
+            <a href="{{ page.url | prepend: site.baseurl }}"><i class="fa fa-database"></i> {{ page.title }}</a>
+            </div>
+            {% endif %}
+          {% endfor %}
+          <div class="navigation-button navigation-button-icon">
+            <a href="{{ site.baseurl }}/"><i class="fa fa-home fa-lg"></i></a>
+          </div>
+        </div>
+      </nav>
 
 </header>
+</div>

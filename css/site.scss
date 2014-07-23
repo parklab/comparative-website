@@ -5,12 +5,27 @@
 @import 'neat/neat';
 @import 'base/base';
 
-preamble {
-  @include span-columns(12);
-  @include omega;
+$primary-contrast-color: #167C94; //#cc5500;
+$primary-background-color: #DBF6FC;
+$dark-gray-color: #555;
 
-  font-size: $base-font-size * 1;  
-  text-align: left; 
+$visual-grid: true;
+$visual-grid-color: red;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.1;
+
+$mobile: new-breakpoint(max-width 480px);
+$desktop: new-breakpoint(min-width 850px);
+
+.wrapper {
+  margin-top: 30px;
+  @include outer-container;
+}
+
+header {
+  display: block;
+  height: 70x;
+  margin-bottom: 50px;
 }
 
 @mixin box-shadow($top, $left, $blur, $color, $inset:"") {
@@ -39,32 +54,158 @@ preamble {
           border-radius: $radius;
 }
 
+preamble {
+  font-size: $base-font-size * 1;  
+  text-align: left; 
+  //@include shift(2);
+  @include border-radius(3px);
+  background-color: white; //$primary-background-color;
+  //border: 1px solid $primary-contrast-color;
+  color: $primary-contrast-color;
+  padding: 5px;
+  display: block;
+  background-color: transparentize($primary-background-color, 0.8);  
+  margin-bottom: 40px;
+}
+
+.navigation-button {
+    color: white;
+    padding: 7px;
+    padding-top: 8px;
+    font-family: $header-font-family;
+    font-weight: 400;
+    font-style: normal;
+    font-size: $base-font-size;
+    width: 135px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    margin-right: 5px;
+    transition: background-color 750ms;
+
+    //background-color: $primary-contrast-color;
+
+    &:hover {
+      background-color: transparentize($primary-background-color, 0.8);
+      //transform: scale( 1.1 );
+      //transition: transform 100ms;
+    }
+
+    &:last-child {
+      margin-right: 10px;
+    }
+
+    a {
+      color: white;
+    }
+
+    a:hover {
+      color: white;
+    }
+}
+
+.navigation-button-icon {
+  width: 40px;
+}
+
+.logos {
+  @include span-columns(2);
+}
+
+.navigation-title {
+  font-size: $base-font-size * 1.2;
+  font-family: $header-font-family;
+  font-weight: 400;
+  color: #fff;
+  float: left;
+  padding: 7px;
+
+  a {
+    color: inherit;
+  }
+}
+
+nav {
+  //@include linear-gradient( to left, $primary-contrast-color, #fff, $fallback: $primary-contrast-color);  
+  background-color: $primary-contrast-color;
+  @include border-radius(3px);
+  @include shift(2);
+  display: block;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.navigation-buttons {
+  display: block;
+  float: right;
+}
+
+
 .teaser-image {
   height: 150px;
   width: 150px;
   @include border-radius( 5% );
   @include brightness(95%);
-  @include box-shadow(1px, 1px, 2px, rgba(0, 0, 0, 0.1));  
+  @include box-shadow(0px, 0px, 1px, $primary-contrast-color);  
+  border: 1px solid $primary-contrast-color;
 }
 
 section {
-  @include outer-container;
+  margin-bottom: 20px;  
   
   header { 
+    @include span-columns(12);
+    @include omega;
+    font-size: $base-font-size;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 15px;
+
+    a {
+      color: $primary-contrast-color;      
+    }
+  }
+
+  aside { 
     @include span-columns(2);
     font-size: $base-font-size * 1.5;
     font-weight: bold;
     text-align: center;
 
     a {
-    color: #cc5500;      
+    color: $primary-contrast-color;      
+    }
+
+    h1 {
+      font-size: $base-font-size * 1.2;
     }
   }
   
+  $header-icon-width: 25px;
+
   article { 
     @include span-columns(10);
     @include omega;
     margin-bottom: 40px;
+
+    h1 {
+      font-family: $header-font-family;
+      font-weight: 400;
+      font-size: $base-font-size * 1.75;
+      margin-bottom: 0.4em;
+    }
+
+    h2 {
+      font-family: $header-font-family;
+      font-weight: 400;
+      font-size: $base-font-size * 1.5;
+      margin-bottom: 0.1em;
+      color: $primary-contrast-color;
+
+      .fa {
+        width: $header-icon-width;
+      }
+    }
     
     abstract {
       font-size: $base-font-size;
@@ -74,8 +215,22 @@ section {
 
     citation {
       display: block;
-      color: #999;
+      color: $dark-gray-color;
       font-size: $base-font-size * 0.8;
+      #margin-left: $header-icon-width/2 - 5;
+      #padding-left: $header-icon-width/2 + 5;
+      margin-bottom: 20px;
+      #border-left: 6px solid transparentize($primary-contrast-color,0.7);
+
+      a {
+        color: $dark-gray-color;
+        font-style: italic;
+        text-decoration: underline;
+      }
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
     }
   }
 }
