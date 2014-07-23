@@ -1,10 +1,84 @@
 ---
 ---
 
-@import 'grid-settings';
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'base/base';
 
-$red: #f00;
+preamble {
+  @include span-columns(12);
+  @include omega;
 
-p {
-  color: $red;
+  font-size: $base-font-size * 1;  
+  text-align: left; 
 }
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+
+      -webkit-box-shadow:$top $left $blur $color #{$inset};
+      -moz-box-shadow:$top $left $blur $color #{$inset};
+      box-shadow:$top $left $blur $color #{$inset};
+    }
+
+@mixin desaturation($percentage) {
+  -webkit-filter: grayscale($percentage);
+  -moz-filter: grayscale($percentage);
+  filter: grayscale($percentage);
+}
+
+@mixin brightness($percentage) {
+  -webkit-filter: brightness($percentage);
+  -moz-filter: brightness($percentage);
+  filter: brightness($percentage);
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.teaser-image {
+  height: 150px;
+  width: 150px;
+  @include border-radius( 5% );
+  @include brightness(95%);
+  @include box-shadow(1px, 1px, 2px, rgba(0, 0, 0, 0.1));  
+}
+
+section {
+  @include outer-container;
+  
+  header { 
+    @include span-columns(2);
+    font-size: $base-font-size * 1.5;
+    font-weight: bold;
+    text-align: center;
+
+    a {
+    color: #cc5500;      
+    }
+  }
+  
+  article { 
+    @include span-columns(10);
+    @include omega;
+    margin-bottom: 40px;
+    
+    abstract {
+      font-size: $base-font-size;
+      display: block;      
+      margin-bottom: 20px;
+    }
+
+    citation {
+      display: block;
+      color: #999;
+      font-size: $base-font-size * 0.8;
+    }
+  }
+}
+
+
+.menu-icon { display: none; }

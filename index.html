@@ -2,20 +2,33 @@
 layout: default
 ---
 
-<div class="home">
+<div>
+    <section>
+      <preamble>
+        Data are available for the ENCODE/modENCODE publication release for the following papers: 
+      </preamble>
+    </section>
+</div>
 
-  <p>
-  Data are available for the ENCODE/modENCODE publication release for the following papers: 
-  </p>
+<div>
+  {% for page in site.pages %}
+    {% if page.subproject %}
+    <section>
+      <header>
+        <img class="teaser-image" src="{{ page.teaser }}"/>
+        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      </header>
+      <article>
+        <abstract>
+        {{ page.abstract }}
+        </abstract>
 
-  <ul class="posts">
-    {% for page in site.pages %}
-      {% if page.subproject %}
-      <li>
-        <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a><br>
-        <p>{{ page.abstract }}</p>
-      </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+        <citation>
+          {{ page.paper.authors }}, <b>{{ page.paper.title }}</b>, {{ page.paper.meta }}.
+        </citation>
+
+      </article>
+    </section>
+    {% endif %}
+  {% endfor %}
 </div>
