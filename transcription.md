@@ -1,5 +1,6 @@
 ---
 layout: page
+order: 3
 title: Transcription
 permalink: /transcription/
 subproject: true

@@ -1,5 +1,6 @@
 ---
 layout: page
+order: 1
 title: Chromatin
 permalink: /chromatin/
 subproject: true
