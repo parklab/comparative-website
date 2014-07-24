@@ -24,7 +24,7 @@ $desktop: new-breakpoint(min-width 850px);
 
 header {
   display: block;
-  height: 70x;
+  //height: 70px;
   margin-bottom: 50px;
 }
 
@@ -154,12 +154,16 @@ section {
   margin-bottom: 20px;  
   
   header { 
-    @include span-columns(12);
+    @include span-columns(10);
+    @include shift(2);
     @include omega;
-    font-size: $base-font-size;
-    font-weight: bold;
-    text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    
+    h1 {
+      font-family: $header-font-family;
+      font-weight: 400;
+      font-size: $base-font-size * 1.75;
+    }    
 
     a {
       color: $primary-contrast-color;      
@@ -201,12 +205,44 @@ section {
       font-size: $base-font-size * 1.5;
       margin-bottom: 0.1em;
       color: $primary-contrast-color;
-
       .fa {
         width: $header-icon-width;
       }
     }
+
+    h3 {
+      font-family: $header-font-family;
+      font-weight: 400;
+      font-size: $base-font-size * 1.25;
+      margin-bottom: 0.1em;
+      color: $primary-contrast-color;
+    }
+
+    ul {
+      @extend %default-ul;
+    }
     
+  a {
+    color: $base-font-color;
+    position: relative;
+    text-decoration: none;    
+    transition: background-color 500ms;    
+  }
+  a:after{
+     position: absolute;
+     left: 0px;
+     bottom: 0em;
+     content: '';
+     width: 100%;
+     border-bottom-width: 1px;
+     border-bottom-style: dotted;
+  }
+  a:hover {
+    color: $base-font-color;
+    background-color: $primary-background-color;
+    @include border-radius(3px);
+  }    
+
     abstract {
       font-size: $base-font-size;
       display: block;      

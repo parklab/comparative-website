@@ -14,12 +14,13 @@ layout: default
   {% for page in site.pages %}
     {% if page.subproject %}
     <section>
+      <header>
+        <h1>{{ page.paper.title }}</h1>
+      </header>
       <aside>
         <img class="teaser-image" src="{{ page.teaser | prepend: site.baseurl }}"/>
       </aside>
       <article>
-        <h1>{{ page.paper.title }}</h1>
-
         <abstract>
         {{ page.abstract }}
         </abstract>
