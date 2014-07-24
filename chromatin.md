@@ -25,7 +25,7 @@ These data consist of ChIP-seq and ChIP-chip profiles for histone modifications 
 
 For background on the ChIP-seq workflow by the consortium, please see Landt _et al._, [ChIP-seq guidelines and practices used by the ENCODE and modENCODE consortia](http://www.ncbi.nlm.nih.gov/pubmed/22955991), _Genome Research_, 2012.
 
-* __[ENCODE-X Browser](http://encode-x.med.harvard.edu)__: We have developed a web application for theses chromatin datasets. The main advantage of our web application is that it will allow one to quick see what chromatin-related data are available using faceted browsing and use the IGV browser to view the data, for all three organisms. The chromatin state maps generated in Ho et al, 2014 are automatically loaded in the ENCODE-X Browser.
+* __[ENCODE-X Browser](http://encode-x.med.harvard.edu/data_sets/chromatin/)__: We have developed a web application for theses chromatin datasets. The main advantage of our web application is that it will allow one to quick see what chromatin-related data are available using faceted browsing and use the IGV browser to view the data, for all three organisms. The chromatin state maps generated in Ho et al, 2014 are automatically loaded in the ENCODE-X Browser.
 * __[Antibody Validation Database](http://compbio.med.harvard.edu/antibodies)__: Antibodies used in the project were rigorously tested, and this database contains the validation data.  Please see Egelhofer <em>et al.</em>, An assessment of histone-modification antibody quality, <em>Nature Str &amp; Mol Biology</em>, 2011.
 * __[modENCODE Data Portal](http://data.modencode.org)__: This website also allows one to use faceted browsing to select datasets of interest (fly and worm only).
 * __[modMine](http://www.modmine.org)__: This warehouse by the modENCODE Data Coordinating Center contains a flexible query interface with access to extensive intermediate and metadata (fly and worm only).
@@ -58,13 +58,15 @@ This table contains detailed meta-data for all chromatin datesets, including lin
 
 ### ChIP-seq
 
-To enable the cross-species comparisons described in this paper, we have reprocessed all data using MACS. (Due to the slight differences in the peak-calling and input normalization steps, there may be slight discrepancies between the fly profiles analyzed here and profiles available at [the modENCODE data portal](http://data.modencode.org) or [modMine](http://modmine.org). 
+To enable the cross-species comparisons described in this paper, we have reprocessed all data using MACS. (Due to the slight differences in the peak-calling and input normalization steps, there may be slight discrepancies between the fly profiles analyzed here and profiles available at [modENCODE data portal](http://data.modencode.org) or [modMine](http://modmine.org)). 
 
 For every pair of aligned ChIP and matching input-DNA data, we used MACS version 2 to generate fold enrichment signal tracks for every position in a genome:
 
-_macs2 callpeak -t ChIP.bam -c Input.bam -B --nomodel --shiftsize 73 --SPMR -g hs -n ChIP_
+```
+macs2 callpeak -t ChIP.bam -c Input.bam -B --nomodel --shiftsize 73 --SPMR -g hs -n ChIP
 
-_macs2 bdgcmp -t ChIP_treat_pileup.bdg -c ChIP_control_lambda.bdg -o ChIP_FE.bedgraph -m FE_
+macs2 bdgcmp -t ChIP_treat_pileup.bdg -c ChIP_control_lambda.bdg -o ChIP_FE.bedgraph -m FE
+```
 
 ### ChIP-chip
 
