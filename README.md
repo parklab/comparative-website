@@ -8,6 +8,22 @@ Comparative modENCODE/ENCODE project website built with [Jekyll](jekyllrb.com), 
 $ gem install jekyll
 ```
 
+The site works with Jekyll 2.0.0 or later.
+
+### Build and/or Serve Site
+
+```ShellSession
+jekyll serve --baseurl "" --watch
+```
+
+### View Site
+
+```ShellSession
+$ open http://0.0.0.0:4000/
+```
+
+### Optional Setup Instructions
+
 To update the dependencies on Bourbon, Neat or Bitters additional gems are required.
 
 ```ShellSession
@@ -17,15 +33,3 @@ $ gem install bitters
 ```
 
 Depending on your system your might have to run those as superuser using ```sudo```.
-
-### Build and/or Serve Site
-
-```ShellSession
-$ jekyll serve --watch
-```
-
-### View Site
-
-```ShellSession
-$ open http://0.0.0.0:4000/
-```
