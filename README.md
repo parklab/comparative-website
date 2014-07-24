@@ -18,6 +18,12 @@ To build the static HTML and CSS for deployment use the Jekyll ```build``` comma
 $ jekyll build
 ```
 
+To build the site for production deployment outside GitHub pages, the default ```baseurl``` in ```_config.yml``` needs to be overwritten using the ```baseurl``` defined in ```_config_production.yml```. __Please do not edit the ```baseurl``` in ```_config.yml```.
+
+```
+jekyll build --config _config.yml,_config_production.yml
+```
+
 ### Serve Site
 
 To serve the site locally for development use the Jekyll ```serve``` command.
