@@ -29,7 +29,7 @@ For background on the ChIP-seq workflow by the consortium, please see Landt _et 
 * __[Antibody Validation Database](http://compbio.med.harvard.edu/antibodies)__: Antibodies used in the project were rigorously tested, and this database contains the validation data.  Please see Egelhofer <em>et al.</em>, An assessment of histone-modification antibody quality, <em>Nature Str &amp; Mol Biology</em>, 2011.
 * __[modENCODE Data Portal](http://data.modencode.org)__: This website also allows one to use faceted browsing to select datasets of interest (fly and worm only).
 * __[modMine](http://www.modmine.org)__: This warehouse by the modENCODE Data Coordinating Center contains a flexible query interface with access to extensive intermediate and metadata (fly and worm only).
-* __[ENCODE data portal](https://genome.ucsc.edu/ENCODE/)__: This contains human and mouse ENCODE data.
+* __[ENCODE data portal](http://encodeproject.org/ENCODE/)__: This contains human and mouse ENCODE data.
 * __[Gene Expression Omnibus (GEO)](http://www.ncbi.nlm.nih.gov/geo/)__ and __[Short Read Archive (SRA)](http://www.ncbi.nlm.nih.gov/sra)__: Raw data are available from these two sites. Links to specific datasets are available from the above sites.
 
 ##  Available Data
