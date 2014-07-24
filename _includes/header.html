@@ -9,12 +9,16 @@
         </div>
 
         <div class="navigation-buttons">
-          {% for page in site.pages %}
+            {% for order in (1..3) %}
+            {% for page in site.pages %}
+            {% if page.order == order %}
             {% if page.subproject %}
             <div class="navigation-button">
             <a href="{{ page.url | prepend: site.baseurl }}"><i class="fa fa-database"></i> {{ page.title }}</a>
             </div>
             {% endif %}
+            {% endif %}
+          {% endfor %}
           {% endfor %}
           <div class="navigation-button navigation-button-icon">
             <a href="{{ site.baseurl }}/"><i class="fa fa-home fa-lg"></i></a>
