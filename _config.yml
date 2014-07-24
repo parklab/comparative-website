@@ -1,9 +1,9 @@
 # Site settings
 title: Comparative modENCODE/ENCODE
-email: contact@c
-description: "TODO: Short description of the project."
+email: 
+description: 
 baseurl: "/comparative-website"
-url: "http://encodeproject.org/comparative"
+url: "http://www.encodeproject.org/comparative"
 twitter_username: 
 github_username:  
 
