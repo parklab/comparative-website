@@ -10,10 +10,20 @@ $ gem install jekyll
 
 The site works with Jekyll 2.0.0 or later.
 
-### Build and/or Serve Site
+### Build Site
+
+To build the static HTML and CSS for deployment use the Jekyll ```build``` command. A range of deployment strategies is discussed in the [Jekyll documentation](http://jekyllrb.com/docs/deployment-methods/). 
 
 ```ShellSession
-jekyll serve --baseurl "" --watch
+$ jekyll build
+```
+
+### Serve Site
+
+To serve the site locally for development use the Jekyll ```serve``` command.
+
+```ShellSession
+$ jekyll serve --baseurl "" --watch
 ```
 
 ### View Site
