@@ -16,16 +16,19 @@ layout: default
     {% if page.order == order %}
     {% if page.subproject %}
     <section>
-      <header>
-        <h1>{{ page.paper.title }}</h1>
-      </header>
       <aside>
         <img class="teaser-image" src="{{ page.teaser | prepend: site.baseurl }}"/>
       </aside>
       <article>
+        <header>
+          <h1>{{ page.paper.title }}</h1>
+        </header>
+
+        <!--
         <abstract>
         {{ page.abstract }}
         </abstract>
+        -->
         
         <h2><i class="fa fa-database"></i> Data</h2>
         <citation>
@@ -34,13 +37,36 @@ layout: default
 
         <h2><i class="fa fa-book"></i> Citation</h2>
         <citation>
-          {{ page.paper.authors }}, <b>{{ page.paper.title }}</b>, {{ page.paper.meta }}.
+          {{ page.paper.authors_short }}, <b>{{ page.paper.title }}</b>, {{ page.paper.meta }}.&nbsp;<a href="{{ page.paper.url }}"><i class="fa fa-external-link"></i></a>
         </citation>
-
       </article>      
     </section>
     {% endif %}
     {% endif %}    
   {% endfor %}
   {% endfor %}
+
+  <section>
+    <aside>
+      <img class="teaser-image" src="/assets/images/genome_research.png"/>    
+    </aside>
+    <article>
+      <header>
+        <h1>Companion Papers</h1>
+      </header>
+      {% for publication_hash in site.data.publications %}
+      {% assign publication = publication_hash[1] %}
+      <h2>{{ publication.journal }}</h2>
+      <ul class="paper-icon-list">
+        {% for paper in publication.papers %}
+        <li>
+          <citation>
+          {{ paper.authors }}, <b>{{ paper.title }}</b>, {{ paper.meta }}.&nbsp;<a href="{{ paper.url }}"><i class="fa fa-external-link"></i></a>
+          </citation>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </article> 
+  </section>
 </div>

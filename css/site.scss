@@ -24,12 +24,10 @@ $desktop: new-breakpoint(min-width 850px);
 
 header {
   display: block;
-  //height: 70px;
   margin-bottom: 50px;
 }
 
 @mixin box-shadow($top, $left, $blur, $color, $inset:"") {
-
       -webkit-box-shadow:$top $left $blur $color #{$inset};
       -moz-box-shadow:$top $left $blur $color #{$inset};
       box-shadow:$top $left $blur $color #{$inset};
@@ -53,6 +51,50 @@ header {
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
+
+@mixin icon-list($color, $icon) {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      padding-left: 2em;
+      padding-bottom: 0.5em;
+      line-height: $base-font-size * 1.2;
+      vertical-align: top;
+      color: $base-font-color;
+      font-family: $base-font-family;
+      font-weight: 400;
+      font-size: $base-font-size * 0.9;
+      font-style: normal;
+      min-height: 2.5em;
+
+      a {        
+        //font-weight: 700;
+        //color: darken( $color, 20% );
+      }
+      a:after{
+         border-bottom-width: 0;
+      }    
+    }
+    li:before {
+      content: $icon;
+      color: $color; 
+      font-family: FontAwesome; /* or whatever */
+      font-size: $base-font-size * 1;
+      margin-left: -2.2em;
+      padding-left: 0.8em;
+      width: 1.25em;
+      height: 1.5em;
+      float: left;
+      display: block;
+    }  
+  }
+
+ul.paper-icon-list {
+  @include icon-list($dark-gray-color,"\f02d");
+}
+
 
 preamble {
   font-size: $base-font-size * 1;  
@@ -154,9 +196,9 @@ section {
   margin-bottom: 20px;  
   
   header { 
-    @include span-columns(10);
-    @include shift(2);
-    @include omega;
+    //@include span-columns(10);
+    //@include shift(2);
+    //@include omega;
     margin-bottom: 10px;
     
     h1 {
@@ -195,15 +237,15 @@ section {
     h1 {
       font-family: $header-font-family;
       font-weight: 400;
-      font-size: $base-font-size * 1.75;
+      font-size: $base-font-size * 1.5;
       margin-bottom: 0.4em;
     }
 
     h2 {
       font-family: $header-font-family;
       font-weight: 400;
-      font-size: $base-font-size * 1.5;
-      margin-bottom: 0.1em;
+      font-size: $base-font-size * 1.25;
+      margin-bottom: 0.2em;
       color: $primary-contrast-color;
       .fa {
         width: $header-icon-width;
@@ -213,7 +255,7 @@ section {
     h3 {
       font-family: $header-font-family;
       font-weight: 400;
-      font-size: $base-font-size * 1.25;
+      font-size: $base-font-size * 1.125;
       margin-bottom: 0.1em;
       color: $primary-contrast-color;
     }
@@ -225,9 +267,10 @@ section {
   a {
     color: $base-font-color;
     position: relative;
-    text-decoration: none;    
+    text-decoration: underline;
     transition: background-color 500ms;    
   }
+  /*
   a:after{
      position: absolute;
      left: 0px;
@@ -237,6 +280,7 @@ section {
      border-bottom-width: 1px;
      border-bottom-style: dotted;
   }
+  */
   a:hover {
     color: $base-font-color;
     background-color: $primary-background-color;

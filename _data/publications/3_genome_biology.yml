@@ -1,0 +1,15 @@
+journal: Genome Biology
+order: 3
+papers:
+  - authors: Kudron et al.
+    title: "Tissue-specific direct targets of Caenorhabditis elegans Rb/E2F dictate distinct somatic and germline programs"
+    meta: "Genome Biology 14:R5, 2013"
+    url: http://genomebiology.com/content/14/1/R5
+    type: companion
+  #- authors: 
+  #  title: "OrthoClust: An orthology-based network framework for clustering data across multiple species"
+  #  meta: "Genome Biology, in submission"
+  #  url: 
+  #  type: companion 
+#DNA copy number evolution in Drosophila cell lines, Genome Biology, in press.
+

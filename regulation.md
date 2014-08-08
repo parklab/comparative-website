@@ -12,7 +12,11 @@ paper:
 
   authors: Boyle AP, Araya CL, Brdlik C, Cayting P, Cheng C, Cheng Y, Gardner K, Hillier L, Janette J, Jiang L, Kasper D, Kawli T, Kheradpour P, Kundaje A, Li JJ, Ma L, Niu W, Rehm EJ, Rozowsky J, Slattery M, Spokony R, Terrell R, Vafeados D, Wang D, Weisdepp P, Wu Y, Xie D, Yan K, Feingold EA, Good PJ, Pazin MJ, Huang H, Bickel PJ, Brenner SE, Reinke V, Waterston RH, Gerstein M, White KP, Kellis M, and Snyder M
 
-  meta: Nature, VOLUME, PAGES
+  authors_short: Boyle et al.
+
+  meta: Nature, in press
+
+  url:   
 ---
 
 The data below provide data from all stages of the uniformly processed ENCODE and  modENCODE data for human,  worm (_C. elegans_) and fly (_D. melanogaster_) until the July 2012 Freeze that is being used in the joint modENCODE/ENCODE analysis papers.
