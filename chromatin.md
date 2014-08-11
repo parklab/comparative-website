@@ -14,7 +14,7 @@ paper:
 
   authors_short: Ho et al.
 
-  meta: Nature, in press
+  meta: Nature, in press, 2014
 
   url: 
 ---

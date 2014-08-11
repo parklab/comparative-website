@@ -5,12 +5,10 @@ layout: default
 <div>
     <section>
       <preamble>
-        Data are available for the ENCODE/modENCODE publication release for the following papers: 
+        Data are available for the following papers of the for the ENCODE/modENCODE publication release.
       </preamble>
     </section>
-</div>
 
-<div>
   {% for order in (1..3) %}
   {% for page in site.pages %}
     {% if page.order == order %}
@@ -45,6 +43,12 @@ layout: default
     {% endif %}    
   {% endfor %}
   {% endfor %}
+
+    <section>
+      <preamble>
+        Members of the consortium have published several companion papers related to the three studies above.
+      </preamble>
+    </section>
 
   <section>
     <aside>

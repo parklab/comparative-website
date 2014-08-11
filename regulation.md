@@ -83,9 +83,11 @@ All human datasets were processed uniformly for the steps below. Here we provide
 
 ## Data Source
 
+<!--
 <iframe width='800px' height='300px' scrolling=no frameborder='0' src="https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/pubhtml/sheet?headers=false&gid=1301528230"></iframe>
+-->
 
-[(Download)](https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/export)
+[View](https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/pubhtml/sheet) on Google Docs or [(Download)](https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/export)
 
 ## Data Format
 
@@ -372,17 +374,19 @@ BED
 All Worm datasets were processed uniformly for the steps below. Here we provide a reference file to map all datasets to their
 originating ENCODE Accession ID as well as appropriate metadata. 
 
-      Downloadable files in the sections below map to either a File Prefix or a modEncodeDCC Accession ID.
+Downloadable files in the sections below map to either a File Prefix or a modEncodeDCC Accession ID.
 
 ## Data Source
 
+<!--
 <iframe width='800px' height='300px' scrolling=no frameborder='0' src="https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/pubhtml/sheet?headers=false&gid=1833857626"></a></iframe>
+-->
 
-[(Download)](https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/export)
+[View](https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/pubhtml/sheet?headers=false&gid=1833857626) on Google Docs or [Download](https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/export)
 
 ## Data Format
 
-EXCEL/TSV/GoogleDoc
+EXCEL/TSV/Google Docs
 
 [Top](#)
 
@@ -660,13 +664,15 @@ BED
 All fly datasets were processed uniformly for the steps below. Here we provide a reference file to map all datasets to their
 originating ENCODE Accession ID as well as appropriate metadata. 
 
-      Downloadable files in the sections below map to either a File Prefix or a modEncodeDCC Accession ID.
+Downloadable files in the sections below map to either a File Prefix or a modEncodeDCC Accession ID.
 
 ## Data Source
 
+<!--
 <iframe width='800px' height='300px' scrolling=no frameborder='0' src="https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/pubhtml/sheet?headers=false&gid=1581524421"></a></iframe>
+-->
 
-[(Download)](https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/export)
+[View](https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/pubhtml/sheet?headers=false&gid=1581524421) on Google Docs or [(Download)](https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/export)
 
 ## Data Format
 

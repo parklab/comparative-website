@@ -99,14 +99,15 @@ ul.paper-icon-list {
 preamble {
   font-size: $base-font-size * 1;  
   text-align: left; 
-  //@include shift(2);
+  @include span-columns(12);
+  @include omega;
   @include border-radius(3px);
   background-color: white; //$primary-background-color;
   //border: 1px solid $primary-contrast-color;
   color: $primary-contrast-color;
   padding: 5px;
   display: block;
-  background-color: transparentize($primary-background-color, 0.8);  
+  background-color: transparentize($primary-background-color, 0.7);  
   margin-bottom: 40px;
 }
 
@@ -288,7 +289,8 @@ section {
   }    
 
     abstract {
-      font-size: $base-font-size;
+      font-size: $base-font-size * 0.8;
+      color: $dark-gray-color;      
       display: block;      
       margin-bottom: 20px;
     }
