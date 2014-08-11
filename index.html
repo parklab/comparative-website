@@ -15,7 +15,9 @@ layout: default
     {% if page.subproject %}
     <section>
       <aside>
-        <img class="teaser-image" src="{{ page.teaser | prepend: site.baseurl }}"/>
+        <a href="{{ page.url | prepend: site.baseurl }}">
+          <img class="teaser-image" src="{{ page.teaser | prepend: site.baseurl }}">
+        </a>
       </aside>
       <article>
         <header>
