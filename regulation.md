@@ -14,7 +14,7 @@ paper:
 
   authors_short: Boyle et al.
 
-  meta: Nature, in press
+  meta: Nature, in press, 2014
 
   url:   
 ---
@@ -77,17 +77,17 @@ The data below provide data from all stages of the uniformly processed ENCODE an
 
 # 0. Dataset Reference
 
-## Description:
+## Description
 
 All human datasets were processed uniformly for the steps below. Here we provide a reference file to map all datasets to their originating ENCODE Accession ID as well as appropriate metadata. Downloadable files in the sections below map to either a File Prefix, a UCSC Accession ID or an EncodeDCC Accession ID.
 
-## Data Source:
+## Data Source
 
 <iframe width='800px' height='300px' scrolling=no frameborder='0' src="https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/pubhtml/sheet?headers=false&gid=1301528230"></iframe>
 
 [(Download)](https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/export)
 
-## Data Format:
+## Data Format
 
 EXCEL/TSV/GoogleDoc
 
@@ -98,15 +98,15 @@ EXCEL/TSV/GoogleDoc
 
 # 1. Genome Assembly (hg19)
 
-## Description:
+## Description
 
 Per chromosome FASTA file (Random contigs are not used for mapping or computing unique mappability)
 
-## Data Source:
+## Data Source
 
 [http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/referenceSequences/](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/referenceSequences/)
 
-## Data Format:
+## Data Format
 
 FASTA
 
@@ -115,11 +115,11 @@ FASTA
 
 # 2. Raw Alignments
 
-## Description:
+## Description
 
 FASTQ and BAM files can be downloaded from the URL. Different labs used different mappers and mapping strategies. Hence, these files should be filtered to standardize them.
 
-## Data Source:
+## Data Source
 
 [http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeHaibTfbs/](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeHaibTfbs/)
 [http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeBroadHistone/](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeBroadHistone/)
@@ -128,7 +128,7 @@ FASTQ and BAM files can be downloaded from the URL. Different labs used differen
 [http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeUchicagoTfbs/](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeUchicagoTfbs/)
 [http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeUwTfbs/](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeUwTfbs/)
 
-## Data Format:
+## Data Format
 
 BAM
 
@@ -139,15 +139,15 @@ BAM
 
 # 3. Unique Alignments
 
-## Description:
+## Description
 
 BAM files above are filtered to only keep unique mapping reads (tagAlign/ directory). Then duplicate reads were removed (only one read per position). These can be obtained in the distinctTagAlign/ directory"
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/alignments/distinctTagAlign/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/alignments/distinctTagAlign/)
 
-## Data Format:
+## Data Format
 
 TAGALIGN
 
@@ -158,15 +158,15 @@ TAGALIGN
 
 # 4. MetaData and Data Quality Metrics
 
-## Description:
+## Description
 
 Measures of enrichment, signal-to-noise ratios, library complexity and peak calling statistics.
 
-## Data Source:
+## Data Source
 
 [https://docs.google.com/spreadsheet/ccc?key=0Am6FxqAtrFDwdHdRcHNQUy03SjBoSVMxdUNyZV9Rdnc#gid=9](https://docs.google.com/spreadsheet/ccc?key=0Am6FxqAtrFDwdHdRcHNQUy03SjBoSVMxdUNyZV9Rdnc#gid=9)
 
-## Data Format:
+## Data Format
 
 EXCEL/TSV/GoogleDoc
 
@@ -177,15 +177,15 @@ EXCEL/TSV/GoogleDoc
 
 # 5. Blacklist Regions
 
-## Description:
+## Description
 
 The Blacklisted Regions aim to identify a comprehensive set of regions in the Fly genome that have anomalous, unstructured, high signal/read counts in next gen sequencing experiments independent of cell line and type of experiment. These regions tend to have a very high ratio of multi-mapping to unique mapping reads and high variance in mappability. Some of these regions overlap pathological repeat elements such as satellite, centromeric and telomeric repeats. However, simple mappability based filters do not account for most of these regions. Hence, it is recommended to use this blacklist alongside mappability filters. 
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/blacklist/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/blacklist/)
 
-## Data Format:
+## Data Format
 
 BED
 
@@ -196,15 +196,15 @@ BED
 
 # 6. IDR Uniform Peak Calls
 
-## Description:
+## Description
 
 The SPP peak caller was used along with the IDR framework for calling peaks and thresholding based on reproducibility. IDR threshold of 0.02 was used. See https://sites.google.com/site/anshulkundaje/projects/idr for details"
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/peakCalls/uniformPk/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/peakCalls/uniformPk/)
 
-## Data Format:
+## Data Format
 
 NARROWPEAK
 
@@ -215,15 +215,15 @@ NARROWPEAK
 
 # 7. Blacklist Filtered Peak Calls
 
-## Description:
+## Description
 
 IDR Peak calls are filtered against blacklists. THESE ARE THE HUMAN PEAK CALLS FOR PRIMARY ANALYSIS.
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/peakCalls/finalPk/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/peakCalls/finalPk/)
 
-## Data Format:
+## Data Format
 
 NARROWPEAK
 
@@ -234,15 +234,15 @@ NARROWPEAK
 
 # 8. Unthresholded Peak Calls
 
-## Description:
+## Description
 
 These are a large set of unthresholded peak calls (up to 300K peaks) from SPP. Useful for analyses that want to analyze low signal peaks.
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/peakCalls/unthresholdPk/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/peakCalls/unthresholdPk/)
 
-## Data Format:
+## Data Format
 
 NARROWPEAK
 
@@ -253,15 +253,15 @@ NARROWPEAK
 
 # 9. Signal Tracks
 
-## Description:
+## Description
 
 Signal tracks are generated for each dataset using MACSv2's signal processing module. Signal tracks represent ChIP signal compared to input control signal.
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/signal/foldChange/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/signal/foldChange/) 
 
-## Data Format:
+## Data Format
 
 BIGWIG
 
@@ -272,7 +272,7 @@ BIGWIG
 
 # 10. Unique Mappability track
 
-## Description:
+## Description
 
 A position 'i' on a particular genomic strand 's' is considered uniquely mappable for a read-length 'k' if the k-mer starting at 'i' on strand 's' maps uniquely i.e. only to position 'i' on strand 's' (no mismatches allowed). There are other ways to define mappability e.g. allowing for mismatches but this is basically an ""optimistic"" idealized mappability mask not accounting for mismatches.
 
@@ -308,11 +308,11 @@ integers. Convert to doubles if you like (although this is a waste of memory)
 or write it out as a text file if you prefer"
 </pre>
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/mappability/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/mappability/)
 
-## Data Format:
+## Data Format
 
 BINARY
 
@@ -323,15 +323,15 @@ BINARY
 
 # 11. TF Target Predictions
 
-## Description:
+## Description
 
 TIP algorithm for predicting TF target genes was applied to the input-normalized ChIP-seq tracks; these are the output files of that method.  Note that TIP was run on all CHIP-seq datasets, including those with score -1.  For most applications you should ignore those results, and treat the score=0 results cautiously.
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/TFtargets/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/TFtargets/)
 
-## Data Format:
+## Data Format
 
 TIP
 
@@ -342,15 +342,15 @@ TIP
 
 # 12. HOT Regions
 
-## Description:
+## Description
 
 High-occupancy target (HOT) regions and extreme-occupancy target (XOT) regions from human (hs). HOT and XOT regions are called using the regulator-only peak sets (no polymerase datasets) for each organism, and using only datasets from the species contexts. HOT and XOT regions have higher density of binding than would be expected at a 5% significance threshold (HOT) or 1% significance threshold (XOT) based on 1000x simulations of clustered binding. Please note that the HOT regions include the XOT regions. Concordantly, ubiquitously HOT and ubiquitously XOT regions in each organism are defined as the regions that are HOT or XOT across all of the main contexts, respectively. 
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/hotRegions/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/hotRegions/)
 
-## Data Format:
+## Data Format
 
 BED
 
@@ -367,20 +367,20 @@ BED
 
 # 0. Dataset Reference
 
-## Description:
+## Description
 
 All Worm datasets were processed uniformly for the steps below. Here we provide a reference file to map all datasets to their
 originating ENCODE Accession ID as well as appropriate metadata. 
 
       Downloadable files in the sections below map to either a File Prefix or a modEncodeDCC Accession ID.
 
-## Data Source:
+## Data Source
 
 <iframe width='800px' height='300px' scrolling=no frameborder='0' src="https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/pubhtml/sheet?headers=false&gid=1833857626"></a></iframe>
 
 [(Download)](https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/export)
 
-## Data Format:
+## Data Format
 
 EXCEL/TSV/GoogleDoc
 
@@ -391,15 +391,15 @@ EXCEL/TSV/GoogleDoc
 
 # 1. Genome Assembly (ce10)
 
-## Description:
+## Description
 
 Per chromosome FASTA file (Random contigs are not used for mapping or computing unique mappability)
 
-## Data Source:
+## Data Source
 
 [http://hgdownload.cse.ucsc.edu/goldenPath/ce10/chromosomes/](http://hgdownload.cse.ucsc.edu/goldenPath/ce10/chromosomes/)
 
-## Data Format:
+## Data Format
 
 FASTA
 
@@ -408,15 +408,15 @@ FASTA
 
 # 2. Raw Alignments
 
-## Description:
+## Description
 
 FASTQ and BAM files can be downloaded from the URL. Different labs used different mappers and mapping strategies. Hence, these files should be filtered to standardize them.
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/alignments/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/alignments/)
 
-## Data Format:
+## Data Format
 
 BAM
 
@@ -427,15 +427,15 @@ BAM
 
 # 3. Unique Alignments
 
-## Description:
+## Description
 
 BAM files above are filtered to only keep unique mapping reads (tagAlign/ directory). Then duplicate reads were removed (only one read per position). These can be obtained in the distinctTagAlign/ directory"
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/distinctTagAlign/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/distinctTagAlign/)
 
-## Data Format:
+## Data Format
 
 TAGALIGN
 
@@ -446,15 +446,15 @@ TAGALIGN
 
 # 4. MetaData and Data Quality Metrics
 
-## Description:
+## Description
 
 Measures of enrichment, signal-to-noise ratios, library complexity and peak calling statistics.
 
-## Data Source:
+## Data Source
 
 [https://docs.google.com/spreadsheet/ccc?key=0Algk3BSZDYzgdDlYNU00d2p3azJyZWlrZ09OQXNXTGc#gid=0](https://docs.google.com/spreadsheet/ccc?key=0Algk3BSZDYzgdDlYNU00d2p3azJyZWlrZ09OQXNXTGc#gid=0)
 
-## Data Format:
+## Data Format
 
 EXCEL/TSV/GoogleDoc
 
@@ -465,15 +465,15 @@ EXCEL/TSV/GoogleDoc
 
 # 5. Blacklist Regions
 
-## Description:
+## Description
 
 The Blacklisted Regions aim to identify a comprehensive set of regions in the Fly genome that have anomalous, unstructured, high signal/read counts in next gen sequencing experiments independent of cell line and type of experiment. These regions tend to have a very high ratio of multi-mapping to unique mapping reads and high variance in mappability. Some of these regions overlap pathological repeat elements such as satellite, centromeric and telomeric repeats. However, simple mappability based filters do not account for most of these regions. Hence, it is recommended to use this blacklist alongside mappability filters. 
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/blacklist/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/blacklist/)
 
-## Data Format:
+## Data Format
 
 BED
 
@@ -484,15 +484,15 @@ BED
 
 # 6. IDR Uniform Peak Calls
 
-## Description:
+## Description
 
 The SPP peak caller was used along with the IDR framework for calling peaks and thresholding based on reproducibility. IDR threshold of 0.05 was used. chrM peaks were removed as these were unreliable in most cases. See https://sites.google.com/site/anshulkundaje/projects/idr for details
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/uniformPk/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/uniformPk/)
 
-## Data Format:
+## Data Format
 
 NARROWPEAK
 
@@ -503,15 +503,15 @@ NARROWPEAK
 
 # 7. Blacklist Filtered Peak Calls
 
-## Description:
+## Description
 
 IDR Peak calls are filtered against blacklists. THESE ARE THE WORM PEAK CALLS FOR PRIMARY ANALYSIS.
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/finalPk/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/finalPk/)
 
-## Data Format:
+## Data Format
 
 NARROWPEAK
 
@@ -522,15 +522,15 @@ NARROWPEAK
 
 # 8. Unthresholded Peak Calls
 
-## Description:
+## Description
 
 These are a large set of unthresholded peak calls (up to 300K peaks) from SPP. Useful for analyses that want to analyze low signal peaks.
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/unthresholdPk/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/unthresholdPk/)
 
-## Data Format:
+## Data Format
 
 NARROWPEAK
 
@@ -541,15 +541,15 @@ NARROWPEAK
 
 # 9. Signal Tracks
 
-## Description:
+## Description
 
 Signal tracks are generated for each dataset using MACSv2's signal processing module. Signal tracks represent ChIP signal compared to input control signal.
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/foldChange/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/foldChange/) 
 
-## Data Format:
+## Data Format
 
 BIGWIG/BEDGRAPH
 
@@ -560,7 +560,7 @@ BIGWIG/BEDGRAPH
 
 # 10. Unique Mappability track
 
-## Description:
+## Description
 
 A position 'i' on a particular genomic strand 's' is considered uniquely mappable for a read-length 'k' if the k-mer starting at 'i' on strand 's' maps uniquely i.e. only to position 'i' on strand 's' (no mismatches allowed). There are other ways to define mappability e.g. allowing for mismatches but this is basically an ""optimistic"" idealized mappability mask not accounting for mismatches.
 
@@ -596,11 +596,11 @@ integers. Convert to doubles if you like (although this is a waste of memory)
 or write it out as a text file if you prefer"
 </pre>
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/mappability/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/mappability/)
 
-## Data Format:
+## Data Format
 
 BINARY
 
@@ -611,15 +611,15 @@ BINARY
 
 # 11. TF Target Predictions
 
-## Description:
+## Description
 
 TIP algorithm for predicting TF target genes was applied to the input-normalized ChIP-seq tracks; these are the output files of that method.  Note that TIP was run on all CHIP-seq datasets, including those with score -1.  For most applications you should ignore those results, and treat the score=0 results cautiously.
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/TFtargets/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/TFtargets/)
 
-## Data Format:
+## Data Format
 
 TIP
 
@@ -630,15 +630,15 @@ TIP
 
 # 12. HOT Regions
 
-## Description:
+## Description
 
 High-occupancy target (HOT) regions and extreme-occupancy target (XOT) regions from worm (ce). HOT and XOT regions are called using the regulator-only peak sets (no polymerase datasets) for each organism, and using only datasets from the species contexts. HOT and XOT regions have higher density of binding than would be expected at a 5% significance threshold (HOT) or 1% significance threshold (XOT) based on 1000x simulations of clustered binding. Please note that the HOT regions include the XOT regions. Concordantly, ubiquitously HOT and ubiquitously XOT regions in each organism are defined as the regions that are HOT or XOT across all of the main contexts, respectively. 
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/HOT/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/HOT/)
 
-## Data Format:
+## Data Format
 
 BED
 
@@ -655,20 +655,20 @@ BED
 
 # 0. Dataset Reference
 
-## Description:
+## Description
 
 All fly datasets were processed uniformly for the steps below. Here we provide a reference file to map all datasets to their
 originating ENCODE Accession ID as well as appropriate metadata. 
 
       Downloadable files in the sections below map to either a File Prefix or a modEncodeDCC Accession ID.
 
-## Data Source:
+## Data Source
 
 <iframe width='800px' height='300px' scrolling=no frameborder='0' src="https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/pubhtml/sheet?headers=false&gid=1581524421"></a></iframe>
 
 [(Download)](https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/export)
 
-## Data Format:
+## Data Format
 
 EXCEL/TSV/GoogleDoc
 
@@ -679,15 +679,15 @@ EXCEL/TSV/GoogleDoc
 
 # 1. Genome Assembly (dm3)
 
-## Description:
+## Description
 
 Per chromosome FASTA file (Random contigs are not used for mapping or computing unique mappability)
 
-## Data Source:
+## Data Source
 
 [http://hgdownload.cse.ucsc.edu/goldenPath/dm3/chromosomes/](http://hgdownload.cse.ucsc.edu/goldenPath/dm3/chromosomes/)
 
-## Data Format:
+## Data Format
 
 FASTA
 
@@ -696,15 +696,15 @@ FASTA
 
 # 2. Raw Alignments
 
-## Description:
+## Description
 
 FASTQ and BAM files can be downloaded from the URL. Different labs used different mappers and mapping strategies. Hence, these files should be filtered to standardize them.
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/alignments/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/alignments/)
 
-## Data Format:
+## Data Format
 
 BAM
 
@@ -715,15 +715,15 @@ BAM
 
 # 3. Unique Alignments
 
-## Description:
+## Description
 
 BAM files above are filtered to only keep unique mapping reads (tagAlign/ directory). Then duplicate reads were removed (only one read per position). These can be obtained in the distinctTagAlign/ directory"
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/distinctTagAlign/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/distinctTagAlign/)
 
-## Data Format:
+## Data Format
 
 TAGALIGN
 
@@ -734,15 +734,15 @@ TAGALIGN
 
 # 4. MetaData and Data Quality Metrics
 
-## Description:
+## Description
 
 Measures of enrichment, signal-to-noise ratios, library complexity and peak calling statistics.
 
-## Data Source:
+## Data Source
 
 [https://docs.google.com/spreadsheet/ccc?key=0Algk3BSZDYzgdDU3cXVVMHdQeHRTUWtnYk1aSG13NEE&pli=1#gid=6](https://docs.google.com/spreadsheet/ccc?key=0Algk3BSZDYzgdDU3cXVVMHdQeHRTUWtnYk1aSG13NEE&pli=1#gid=6)
 
-## Data Format:
+## Data Format
 
 EXCEL/TSV/GoogleDoc
 
@@ -753,15 +753,15 @@ EXCEL/TSV/GoogleDoc
 
 # 5. Blacklist Regions
 
-## Description:
+## Description
 
 The Blacklisted Regions aim to identify a comprehensive set of regions in the Fly genome that have anomalous, unstructured, high signal/read counts in next gen sequencing experiments independent of cell line and type of experiment. These regions tend to have a very high ratio of multi-mapping to unique mapping reads and high variance in mappability. Some of these regions overlap pathological repeat elements such as satellite, centromeric and telomeric repeats. However, simple mappability based filters do not account for most of these regions. Hence, it is recommended to use this blacklist alongside mappability filters. 
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/blacklist/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/blacklist/)
 
-## Data Format:
+## Data Format
 
 BED
 
@@ -772,15 +772,15 @@ BED
 
 # 6. IDR Uniform Peak Calls
 
-## Description:
+## Description
 
 The MACSv2 peak caller was used along with the IDR framework for calling peaks and thresholding based on reproducibility. IDR threshold of 0.05 was used.
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/uniformPk/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/uniformPk/)
 
-## Data Format:
+## Data Format
 
 NARROWPEAK
 
@@ -791,15 +791,15 @@ NARROWPEAK
 
 # 7. Blacklist Filtered Peak Calls
 
-## Description:
+## Description
 
 IDR Peak calls are filtered against blacklists. THESE ARE THE Fly PEAK CALLS FOR PRIMARY ANALYSIS.
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/finalPk/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/finalPk/)
 
-## Data Format:
+## Data Format
 
 NARROWPEAK
 
@@ -810,15 +810,15 @@ NARROWPEAK
 
 # 8. Unthresholded Peak Calls
 
-## Description:
+## Description
 
 These are a large set of unthresholded peak calls using MACSv2. Useful for analyses that want to analyze low signal peaks.
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/unthresholdPk/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/unthresholdPk/)
 
-## Data Format:
+## Data Format
 
 NARROWPEAK
 
@@ -829,15 +829,15 @@ NARROWPEAK
 
 # 9. Signal Tracks
 
-## Description:
+## Description
 
 Signal tracks are generated for each dataset using MACSv2's signal processing module. Signal tracks represent ChIP signal compared to input control signal.
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/foldChange/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/foldChange/) 
 
-## Data Format:
+## Data Format
 
 BIGWIG
 
@@ -848,7 +848,7 @@ BIGWIG
 
 # 10. Unique Mappability track
 
-## Description:
+## Description
 
 A position 'i' on a particular genomic strand 's' is considered uniquely mappable for a read-length 'k' if the k-mer starting at 'i' on strand 's' maps uniquely i.e. only to position 'i' on strand 's' (no mismatches allowed). There are other ways to define mappability e.g. allowing for mismatches but this is basically an ""optimistic"" idealized mappability mask not accounting for mismatches.
 
@@ -884,11 +884,11 @@ integers. Convert to doubles if you like (although this is a waste of memory)
 or write it out as a text file if you prefer"
 {% endhighlight %}
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/mappability/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/mappability/)
 
-## Data Format:
+## Data Format
 
 BINARY
 
@@ -899,15 +899,15 @@ BINARY
 
 # 11. TF Target Predictions
 
-## Description:
+## Description
 
 TIP algorithm for predicting TF target genes was applied to the input-normalized ChIP-seq tracks; these are the output files of that method.  Note that TIP was run on all CHIP-seq datasets, including those with score -1.  For most applications you should ignore those results, and treat the score=0 results cautiously.
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/TFtargets/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/TFtargets/)
 
-## Data Format:
+## Data Format
 
 TIP
 
@@ -918,15 +918,15 @@ TIP
 
 # 12. HOT Regions
 
-## Description:
+## Description
 
 High-occupancy target (HOT) regions and extreme-occupancy target (XOT) regions from Fly (dm). HOT and XOT regions are called using the regulator-only peak sets (no polymerase datasets) for each organism, and using only datasets from the species contexts. HOT and XOT regions have higher density of binding than would be expected at a 5% significance threshold (HOT) or 1% significance threshold (XOT) based on 1000x simulations of clustered binding. Please note that the HOT regions include the XOT regions. Concordantly, ubiquitously HOT and ubiquitously XOT regions in each organism are defined as the regions that are HOT or XOT across all of the main contexts, respectively.
 
-## Data Source:
+## Data Source
 
 [http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/HOT/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/HOT/)
 
-## Data Format:
+## Data Format
 
 BED
 
