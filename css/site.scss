@@ -7,20 +7,26 @@
 
 $primary-contrast-color: #167C94; //#cc5500;
 $primary-background-color: #DBF6FC;
+
 $dark-gray-color: #555;
 $medium-gray-color: #777;
+$light-gray-color: #ddd;
 
-$visual-grid: true;
-$visual-grid-color: red;
-$visual-grid-index: front;
-$visual-grid-opacity: 0.1;
+$small-display-columns: 4;
+$medium-display-columns: 12;
+$large-display-columns: 12;
 
-$mobile: new-breakpoint(max-width 480px);
-$desktop: new-breakpoint(min-width 850px);
+$small-display: new-breakpoint(max-width 519px $small-display-columns);
+$medium-display: new-breakpoint(min-width 520px max-width 863px $medium-display-columns);
+$large-display: new-breakpoint(min-width 864px $large-display-columns);
 
 .wrapper {
   margin-top: 30px;
   @include outer-container;
+
+  @include media($small-display) {
+    margin-top: 0px;
+  }        
 }
 
 header {
@@ -104,7 +110,7 @@ ul.paper-icon-list {
 preamble {
   font-size: $base-font-size * 1;  
   text-align: left; 
-  @include span-columns(12);
+  @include span-columns($large-display-columns);
   @include omega;
   @include border-radius(3px);
   background-color: white; //$primary-background-color;
@@ -124,9 +130,18 @@ preamble {
     font-weight: 400;
     font-style: normal;
     font-size: $base-font-size;
-    width: 140px;
+    //width: 140px;
     height: 40px;
-    float: left;
+
+    @include media($small-display) {
+      height: 35px;
+    }        
+
+    @include media($medium-display) {
+      height: 35px;
+    }        
+
+    float: left;    
     text-align: center;
     margin-right: 5px;
     transition: background-color 750ms;
@@ -158,6 +173,12 @@ preamble {
 
 .logos {
   @include span-columns(2);
+
+  @include media($small-display) {
+    @include span-columns($small-display-columns);
+    @include omega;
+    text-align: center;
+  }        
 }
 
 .navigation-title {
@@ -170,32 +191,66 @@ preamble {
 
   a {
     color: inherit;
+  }  
+
+  @include media($small-display) {
+    padding-bottom: 0px;    
+  }          
+
+  @include media($medium-display) {
+    padding-bottom: 0px;    
   }
 }
 
 nav {
-  //@include linear-gradient( to left, $primary-contrast-color, #fff, $fallback: $primary-contrast-color);  
   background-color: $primary-contrast-color;
   @include border-radius(3px);
-  @include shift(2);
+  @include span-columns($large-display-columns - 2);
+  @include omega;
+
   display: block;
   height: 40px;
   margin-bottom: 20px;
+
+  @include media($medium-display) {
+    height: 70px;
+  }        
+
+  @include media($small-display) {
+    @include shift(0);
+    @include span-columns($small-display-columns);
+    @include omega;
+    height: 70px;    
+  }        
 }
 
 .navigation-buttons {
   display: block;
   float: right;
+
+  @include media($small-display) {
+    float: left;
+  }          
+
+  @include media($medium-display) {
+    float: left;
+  }          
 }
 
 
 .teaser-image {
-  //height: 150px;
   width: 150px;
   @include border-radius( 3px );
   @include brightness(97%);
-  @include box-shadow(0px, 0px, 1px, $primary-contrast-color);  
+  //@include box-shadow(0px, 0px, 1px, $primary-contrast-color);  
   border: 1px solid $primary-contrast-color;
+
+  @include media($small-display) {
+    width: 72px;
+    float: left;
+    //border: 0px;
+    margin: 1px;
+  }      
 }
 
 section {
@@ -220,7 +275,7 @@ section {
   }
 
   contact {
-    @include span-columns(12);
+    @include span-columns($large-display-columns);
     @include omega;
 
     border-top: 1px dotted $medium-gray-color;
@@ -238,7 +293,7 @@ section {
   }
 
   credits {
-    @include span-columns(12);
+    @include span-columns($large-display-columns);
     @include omega;
     margin-top: 0.5em;
     margin-bottom: 1em;
@@ -251,6 +306,16 @@ section {
 
   aside { 
     @include span-columns(2);
+
+    @include media($small-display) {
+      @include span-columns($small-display-columns);
+      @include omega();
+      //background-color: $primary-contrast-color;
+      @include background-image(linear-gradient(to right, transparent 20%, $light-gray-color 100%));
+      margin-bottom: 0.5em;      
+      @include border-radius(3px);
+    }    
+
     font-size: $base-font-size * 1.5;
     font-weight: bold;
     text-align: center;
@@ -269,6 +334,12 @@ section {
   article { 
     @include span-columns(10);
     @include omega;
+
+    @include media($small-display) {
+      @include span-columns($small-display-columns);
+      @include omega();
+    }    
+
     margin-bottom: 40px;
     min-height: 150px;
 
@@ -280,6 +351,10 @@ section {
 
     h2.data-page {
         margin-top: 1em;
+
+        a {
+          color: $dark-gray-color;
+        }
     }
 
     h1 {
