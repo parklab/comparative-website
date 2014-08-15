@@ -11,5 +11,9 @@ papers:
     meta: "Genome Biology 15:R100, 2014"
     url: 
     type: companion 
-#DNA copy number evolution in Drosophila cell lines, Genome Biology, in press.
+  - authors: Lee et al.
+    title: "DNA copy number evolution in Drosophila cell lines"
+    meta: "Genome Biology, in press, 2014"
+    url: 
+    type: companion
 
