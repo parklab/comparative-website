@@ -54,7 +54,7 @@ For background on the ChIP-seq workflow by the consortium, please see Landt _et 
 
 ## <a name="ChIP-seq and ChIP-chip data"></a> ChIP-seq and ChIP-chip data
 
-[Chromatin data sheet (Excel table, 287k)](http://compbio.med.harvard.edu/modencode/webpage/metaData_2014_06_02.xlsxmetaData_2014_06_02.xlsx)
+[Chromatin data sheet (Excel table, 287k)](http://compbio.med.harvard.edu/modencode/webpage/metaData_2014_06_02.xlsx)
 
 This table contains detailed meta-data for all chromatin datesets, including links to the source file.
 
@@ -62,7 +62,7 @@ This table contains detailed meta-data for all chromatin datesets, including lin
 
 ### ChIP-seq
 
-To enable the cross-species comparisons described in this paper, we have reprocessed all data using MACS. (Due to the slight differences in the peak-calling and input normalization steps, there may be slight discrepancies between the fly profiles analyzed here and profiles available at [modENCODE data portal](http://data.modencode.org) or [modMine](http://modmine.org)). 
+To enable the cross-species comparisons described in this paper, we have reprocessed all data using MACS. Due to the slight differences in the peak-calling and input normalization steps, there may be slight discrepancies between the fly profiles analyzed here and profiles available at [modENCODE data portal](http://data.modencode.org) or [modMine](http://modmine.org). 
 
 For every pair of aligned ChIP and matching input-DNA data, we used MACS version 2 to generate fold enrichment signal tracks for every position in a genome:
 

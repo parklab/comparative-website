@@ -124,10 +124,15 @@ FASTQ and BAM files can be downloaded from the URL. Different labs used differen
 ## Data Source
 
 [http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeHaibTfbs/](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeHaibTfbs/)
+
 [http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeBroadHistone/](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeBroadHistone/)
+
 [http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeOpenChromChip/](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeOpenChromChip/)
+
 [http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeSydhTfbs/](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeSydhTfbs/)
+
 [http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeUchicagoTfbs/](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeUchicagoTfbs/)
+
 [http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeUwTfbs/](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeUwTfbs/)
 
 ## Data Format
@@ -147,7 +152,7 @@ BAM files above are filtered to only keep unique mapping reads (tagAlign/ direct
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/alignments/distinctTagAlign/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/alignments/distinctTagAlign/)
+[http://www.encodeproject.org/comparative/regulation/Human/alignments/distinctTagAlign/](http://www.encodeproject.org/comparative/regulation/Human/alignments/distinctTagAlign/)
 
 ## Data Format
 
@@ -185,7 +190,7 @@ The Blacklisted Regions aim to identify a comprehensive set of regions in the Fl
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/blacklist/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/blacklist/)
+[http://www.encodeproject.org/comparative/regulation/Human/blacklist/](http://www.encodeproject.org/comparative/regulation/Human/blacklist/)
 
 ## Data Format
 
@@ -204,7 +209,7 @@ The SPP peak caller was used along with the IDR framework for calling peaks and 
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/peakCalls/uniformPk/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/peakCalls/uniformPk/)
+[http://www.encodeproject.org/comparative/regulation/Human/peakCalls/uniformPk/](http://www.encodeproject.org/comparative/regulation/Human/peakCalls/uniformPk/)
 
 ## Data Format
 
@@ -223,7 +228,7 @@ IDR Peak calls are filtered against blacklists. THESE ARE THE HUMAN PEAK CALLS F
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/peakCalls/finalPk/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/peakCalls/finalPk/)
+[http://www.encodeproject.org/comparative/regulation/Human/peakCalls/finalPk/](http://www.encodeproject.org/comparative/regulation/Human/peakCalls/finalPk/)
 
 ## Data Format
 
@@ -242,7 +247,7 @@ These are a large set of unthresholded peak calls (up to 300K peaks) from SPP. U
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/peakCalls/unthresholdPk/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/peakCalls/unthresholdPk/)
+[http://www.encodeproject.org/comparative/regulation/Human/peakCalls/unthresholdPk/](http://www.encodeproject.org/comparative/regulation/Human/peakCalls/unthresholdPk/)
 
 ## Data Format
 
@@ -261,7 +266,7 @@ Signal tracks are generated for each dataset using MACSv2's signal processing mo
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/signal/foldChange/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/signal/foldChange/) 
+[http://www.encodeproject.org/comparative/regulation/Human/signal/foldChange/](http://www.encodeproject.org/comparative/regulation/Human/signal/foldChange/) 
 
 ## Data Format
 
@@ -312,7 +317,7 @@ or write it out as a text file if you prefer"
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/mappability/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/mappability/)
+[http://www.encodeproject.org/comparative/regulation/Human/mappability/](http://www.encodeproject.org/comparative/regulation/Human/mappability/)
 
 ## Data Format
 
@@ -331,7 +336,7 @@ TIP algorithm for predicting TF target genes was applied to the input-normalized
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/TFtargets/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/TFtargets/)
+[http://www.encodeproject.org/comparative/regulation/Human/TFtargets/](http://www.encodeproject.org/comparative/regulation/Human/TFtargets/)
 
 ## Data Format
 
@@ -350,7 +355,7 @@ High-occupancy target (HOT) regions and extreme-occupancy target (XOT) regions f
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/hotRegions/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Human/hotRegions/)
+[http://www.encodeproject.org/comparative/regulation/Human/hotRegions/](http://www.encodeproject.org/comparative/regulation/Human/hotRegions/)
 
 ## Data Format
 
@@ -418,7 +423,7 @@ FASTQ and BAM files can be downloaded from the URL. Different labs used differen
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/alignments/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/alignments/)
+[http://www.encodeproject.org/comparative/regulation/Worm/alignments/](http://www.encodeproject.org/comparative/regulation/Worm/alignments/)
 
 ## Data Format
 
@@ -437,7 +442,7 @@ BAM files above are filtered to only keep unique mapping reads (tagAlign/ direct
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/distinctTagAlign/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/distinctTagAlign/)
+[http://www.encodeproject.org/comparative/regulation/Worm/alignments/distinctTagAlign/](http://www.encodeproject.org/comparative/regulation/Worm/alignments/distinctTagAlign/)
 
 ## Data Format
 
@@ -475,7 +480,7 @@ The Blacklisted Regions aim to identify a comprehensive set of regions in the Fl
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/blacklist/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/blacklist/)
+[http://www.encodeproject.org/comparative/regulation/Worm/blacklist/](http://www.encodeproject.org/comparative/regulation/Worm/blacklist/)
 
 ## Data Format
 
@@ -494,7 +499,7 @@ The SPP peak caller was used along with the IDR framework for calling peaks and 
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/uniformPk/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/uniformPk/)
+[http://www.encodeproject.org/comparative/regulation/Worm/peakCalls/uniformPk/](http://www.encodeproject.org/comparative/regulation/Worm/peakCalls/uniformPk/)
 
 ## Data Format
 
@@ -513,7 +518,7 @@ IDR Peak calls are filtered against blacklists. THESE ARE THE WORM PEAK CALLS FO
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/finalPk/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/finalPk/)
+[http://www.encodeproject.org/comparative/regulation/Worm/peakCalls/finalPk/](http://www.encodeproject.org/comparative/regulation/Worm/peakCalls/finalPk/)
 
 ## Data Format
 
@@ -532,7 +537,7 @@ These are a large set of unthresholded peak calls (up to 300K peaks) from SPP. U
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/unthresholdPk/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/unthresholdPk/)
+[http://www.encodeproject.org/comparative/regulation/Worm/peakCalls/unthresholdPk/](http://www.encodeproject.org/comparative/regulation/Worm/peakCalls/unthresholdPk/)
 
 ## Data Format
 
@@ -551,7 +556,7 @@ Signal tracks are generated for each dataset using MACSv2's signal processing mo
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/foldChange/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/foldChange/) 
+[http://www.encodeproject.org/comparative/regulation/Worm/signal/foldChange/](http://www.encodeproject.org/comparative/regulation/Worm/signal/foldChange/) 
 
 ## Data Format
 
@@ -602,7 +607,7 @@ or write it out as a text file if you prefer"
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/mappability/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/mappability/)
+[http://www.encodeproject.org/comparative/regulation/Worm/mappability/](http://www.encodeproject.org/comparative/regulation/Worm/mappability/)
 
 ## Data Format
 
@@ -621,7 +626,7 @@ TIP algorithm for predicting TF target genes was applied to the input-normalized
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/TFtargets/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/TFtargets/)
+[http://www.encodeproject.org/comparative/regulation/Worm/TFtargets/](http://www.encodeproject.org/comparative/regulation/Worm/TFtargets/)
 
 ## Data Format
 
@@ -640,7 +645,7 @@ High-occupancy target (HOT) regions and extreme-occupancy target (XOT) regions f
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/HOT/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/HOT/)
+[http://www.encodeproject.org/comparative/regulation/Worm/HOT/](http://www.encodeproject.org/comparative/regulation/Worm/HOT/)
 
 ## Data Format
 
@@ -708,7 +713,7 @@ FASTQ and BAM files can be downloaded from the URL. Different labs used differen
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/alignments/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/alignments/)
+[http://www.encodeproject.org/comparative/regulation/Fly/alignments/](http://www.encodeproject.org/comparative/regulation/Fly/alignments/)
 
 ## Data Format
 
@@ -727,7 +732,7 @@ BAM files above are filtered to only keep unique mapping reads (tagAlign/ direct
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/distinctTagAlign/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/distinctTagAlign/)
+[http://www.encodeproject.org/comparative/regulation/Fly/alignments/distinctTagAlign/](http://www.encodeproject.org/comparative/regulation/Fly/alignments/distinctTagAlign/)
 
 ## Data Format
 
@@ -765,7 +770,7 @@ The Blacklisted Regions aim to identify a comprehensive set of regions in the Fl
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/blacklist/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/blacklist/)
+[http://www.encodeproject.org/comparative/regulation/Fly/blacklist/](http://www.encodeproject.org/comparative/regulation/Fly/blacklist/)
 
 ## Data Format
 
@@ -784,7 +789,7 @@ The MACSv2 peak caller was used along with the IDR framework for calling peaks a
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/uniformPk/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/uniformPk/)
+[http://www.encodeproject.org/comparative/regulation/Fly/peakCalls/uniformPk/](http://www.encodeproject.org/comparative/regulation/Fly/peakCalls/uniformPk/)
 
 ## Data Format
 
@@ -803,7 +808,7 @@ IDR Peak calls are filtered against blacklists. THESE ARE THE Fly PEAK CALLS FOR
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/finalPk/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/finalPk/)
+[http://www.encodeproject.org/comparative/regulation/Fly/peakCalls/finalPk/](http://www.encodeproject.org/comparative/regulation/Fly/peakCalls/finalPk/)
 
 ## Data Format
 
@@ -822,7 +827,7 @@ These are a large set of unthresholded peak calls using MACSv2. Useful for analy
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/unthresholdPk/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/unthresholdPk/)
+[http://www.encodeproject.org/comparative/regulation/Fly/peakCalls/unthresholdPk/](http://www.encodeproject.org/comparative/regulation/Fly/peakCalls/unthresholdPk/)
 
 ## Data Format
 
@@ -841,7 +846,7 @@ Signal tracks are generated for each dataset using MACSv2's signal processing mo
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/foldChange/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/foldChange/) 
+[http://www.encodeproject.org/comparative/regulation/Fly/signal/foldChange/](http://www.encodeproject.org/comparative/regulation/Fly/signal/foldChange/) 
 
 ## Data Format
 
@@ -892,7 +897,7 @@ or write it out as a text file if you prefer"
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/mappability/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/mappability/)
+[http://www.encodeproject.org/comparative/regulation/Fly/mappability/](http://www.encodeproject.org/comparative/regulation/Fly/mappability/)
 
 ## Data Format
 
@@ -911,7 +916,7 @@ TIP algorithm for predicting TF target genes was applied to the input-normalized
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/TFtargets/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/TFtargets/)
+[http://www.encodeproject.org/comparative/regulation/Fly/TFtargets/](http://www.encodeproject.org/comparative/regulation/Fly/TFtargets/)
 
 ## Data Format
 
@@ -930,7 +935,7 @@ High-occupancy target (HOT) regions and extreme-occupancy target (XOT) regions f
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/HOT/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/HOT/)
+[http://www.encodeproject.org/comparative/regulation/Fly/HOT/](http://www.encodeproject.org/comparative/regulation/Fly/HOT/)
 
 ## Data Format
 
