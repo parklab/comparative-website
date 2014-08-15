@@ -6,7 +6,7 @@ papers:
     meta: "BMC Bioinformatics, 14:320, 2013"
     url: http://www.biomedcentral.com/1471-2105/14/320
     type: companion
-  - authors: Boley et al.
+  - authors: Bolye et al.
     title: "Genome-guided transcript assembly by integrative analysis of RNA sequence data"
     meta: "Nature Biotechnolgy 32:341-6, 2014"
     url: http://www.nature.com/nbt/journal/v32/n4/full/nbt.2850.html
@@ -20,6 +20,11 @@ papers:
     title: "Cloud-based uniform ChIP-Seq processing tools for modENCODE and ENCODE"
     meta: "BMC Genomics, 14:494, 2013"
     url: http://www.biomedcentral.com/1471-2164/14/494
+    type: companion
+  - authors: Sisu et al.
+    title: "Comparative analysis of pseudogenes across three phyla"
+    meta: "Proceedings of the National Academy of Sciences USA, in press, 2014"
+    type: companion
 
 #Comparative analysis of pseudogenes across three phyla, Sisu, Pei, Leng, Frankish, Zhang,…,Gerstein, in revision, PNAS, MOD24
 #Regulation of alternative splicing in Drosophila by 56 RNA binding proteins, Graveley, Brenner, Celniker groups, in revision at Cell Reports

@@ -6,10 +6,10 @@ papers:
     meta: "Genome Biology 14:R5, 2013"
     url: http://genomebiology.com/content/14/1/R5
     type: companion
-  #- authors: 
-  #  title: "OrthoClust: An orthology-based network framework for clustering data across multiple species"
-  #  meta: "Genome Biology, in submission"
-  #  url: 
-  #  type: companion 
+  - authors: Yan et al. 
+    title: "OrthoClust: An orthology-based network framework for clustering data across multiple species"
+    meta: "Genome Biology 15:R100, 2014"
+    url: 
+    type: companion 
 #DNA copy number evolution in Drosophila cell lines, Genome Biology, in press.
 
