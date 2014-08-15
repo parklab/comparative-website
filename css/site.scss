@@ -25,6 +25,10 @@ $desktop: new-breakpoint(min-width 850px);
 header {
   display: block;
   margin-bottom: 50px;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 @mixin box-shadow($top, $left, $blur, $color, $inset:"") {
@@ -210,6 +214,7 @@ section {
 
     a {
       color: $primary-contrast-color;      
+      text-decoration: none;
     }
   }
 
@@ -234,6 +239,12 @@ section {
     @include span-columns(10);
     @include omega;
     margin-bottom: 40px;
+
+    h1, h2, h3 {
+      a {
+        text-decoration: none;
+      }
+    } 
 
     h1 {
       font-family: $header-font-family;
@@ -265,12 +276,12 @@ section {
       @extend %default-ul;
     }
     
-  a {
-    color: $base-font-color;
-    position: relative;
-    text-decoration: underline;
-    transition: background-color 500ms;    
-  }
+    a {
+      color: $base-font-color;
+      position: relative;
+      text-decoration: underline;
+      transition: background-color 500ms;    
+    }
   /*
   a:after{
      position: absolute;

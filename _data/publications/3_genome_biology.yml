@@ -8,7 +8,7 @@ papers:
     type: companion
   - authors: Yan et al. 
     title: "OrthoClust: An orthology-based network framework for clustering data across multiple species"
-    meta: "Genome Biology 15:R100, 2014"
+    meta: "Genome Biology, in press, 2014" #" 15:R100, 2014"
     url: 
     type: companion 
   - authors: Lee et al.
