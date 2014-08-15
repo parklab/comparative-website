@@ -24,7 +24,9 @@ papers:
   - authors: Sisu et al.
     title: "Comparative analysis of pseudogenes across three phyla"
     meta: "Proceedings of the National Academy of Sciences USA, in press, 2014"
+    url: 
+    data_url: http://psicube.pseudogene.org
     type: companion
 
-#Comparative analysis of pseudogenes across three phyla, Sisu, Pei, Leng, Frankish, Zhang,…,Gerstein, in revision, PNAS, MOD24
 #Regulation of alternative splicing in Drosophila by 56 RNA binding proteins, Graveley, Brenner, Celniker groups, in revision at Cell Reports
+#Joint Inference of chromatin state maps across multiple related genomes, Park group

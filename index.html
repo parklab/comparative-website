@@ -57,6 +57,12 @@ layout: default
         <li>
           <citation>
           {{ paper.authors }}, <b>{{ paper.title }}</b>, {{ paper.meta }}.&nbsp;<a href="{{ paper.url }}"><i class="fa fa-external-link"></i></a>
+          {% if paper.data_url %}
+            (<a href="{{ paper.data_url }}">Data</a>)
+          {% endif %}
+          {% if paper.software_url %}
+            (<a href="{{ paper.software_url }}">Software</a>)
+          {% endif %}
           </citation>
         </li>
         {% endfor %}

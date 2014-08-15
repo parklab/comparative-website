@@ -10,7 +10,8 @@ papers:
     title: "OrthoClust: An orthology-based network framework for clustering data across multiple species"
     meta: "Genome Biology, in press, 2014" #" 15:R100, 2014"
     url: 
-    type: companion 
+    software_url: https://github.com/gersteinlab/OrthoClust    
+    type: companion     
   - authors: Lee et al.
     title: "DNA copy number evolution in Drosophila cell lines"
     meta: "Genome Biology, in press, 2014"
