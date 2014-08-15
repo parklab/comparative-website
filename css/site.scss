@@ -8,6 +8,7 @@
 $primary-contrast-color: #167C94; //#cc5500;
 $primary-background-color: #DBF6FC;
 $dark-gray-color: #555;
+$medium-gray-color: #777;
 
 $visual-grid: true;
 $visual-grid-color: red;
@@ -218,6 +219,36 @@ section {
     }
   }
 
+  contact {
+    @include span-columns(12);
+    @include omega;
+
+    border-top: 1px dotted $medium-gray-color;
+    padding-top: 1em;
+    font-family: $header-font-family;
+    font-size: $base-font-size * 0.9;
+    color: $medium-gray-color;
+    text-align: center;
+    display: block;
+
+    a {
+      color: $primary-contrast-color;      
+      text-decoration: none;
+    }    
+  }
+
+  credits {
+    @include span-columns(12);
+    @include omega;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-family: $header-font-family;
+    font-size: $base-font-size * 0.9;
+    color: $medium-gray-color;
+    text-align: center;
+    display: block;
+  }
+
   aside { 
     @include span-columns(2);
     font-size: $base-font-size * 1.5;
@@ -239,6 +270,7 @@ section {
     @include span-columns(10);
     @include omega;
     margin-bottom: 40px;
+    min-height: 150px;
 
     h1, h2, h3 {
       a {
