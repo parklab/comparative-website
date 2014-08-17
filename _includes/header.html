@@ -1,29 +1,30 @@
 <div>
 <header>
-      <div class="logos">
-        <a href="http://encodeproject.org">
-          <img class="logo-image" src="{{ "/assets/images/logos.png" | prepend: site.baseurl }}"/>
-        </a>
+  <div class="logos">
+    <a href="http://encodeproject.org">
+      <img class="logo-image" src="{{ "/assets/images/logos.png" | prepend: site.baseurl }}"/>
+    </a>
+  </div>
+  <div class="navigation">
+    <nav>
+      <div class="navigation-title">
+      <a href="{{ site.baseurl }}/">{{ site.title }}</a>
       </div>
-      <nav class="navigation">
-        <div class="navigation-title">
-        <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-        </div>
 
-        <div class="navigation-buttons">
-            {% for order in (1..3) %}
-            {% for page in site.pages %}
-            {% if page.order == order %}
-            {% if page.subproject %}
-            <div class="navigation-button">
-            <a href="{{ page.url | prepend: site.baseurl }}"><i class="fa fa-database"></i> {{ page.title }}</a>
-            </div>
-            {% endif %}
-            {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </div>
-      </nav>
-
+      <div class="navigation-buttons">
+          {% for order in (1..3) %}
+          {% for page in site.pages %}
+          {% if page.order == order %}
+          {% if page.subproject %}
+          <div class="navigation-button">
+          <a href="{{ page.url | prepend: site.baseurl }}"><i class="fa fa-database"></i> {{ page.title }}</a>
+          </div>
+          {% endif %}
+          {% endif %}
+        {% endfor %}
+        {% endfor %}
+      </div>
+    </nav>
+  </div>
 </header>
 </div>

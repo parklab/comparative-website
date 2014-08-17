@@ -29,15 +29,6 @@ $large-display: new-breakpoint(min-width 864px $large-display-columns);
   }        
 }
 
-header {
-  display: block;
-  margin-bottom: 50px;
-
-  a {
-    text-decoration: none;
-  }
-}
-
 @mixin box-shadow($top, $left, $blur, $color, $inset:"") {
       -webkit-box-shadow:$top $left $blur $color #{$inset};
       -moz-box-shadow:$top $left $blur $color #{$inset};
@@ -204,16 +195,18 @@ preamble {
 
 nav {
   background-color: $primary-contrast-color;
-  @include border-radius(3px);
   @include span-columns($large-display-columns - 2);
   @include omega;
 
+  @include border-radius(3px);
+
   display: block;
   height: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   @include media($medium-display) {
     height: 70px;
+    @include omega;
   }        
 
   @include media($small-display) {
@@ -222,6 +215,10 @@ nav {
     @include omega;
     height: 70px;    
   }        
+}
+
+.navigation {
+  @include outer-container;
 }
 
 .navigation-buttons {
@@ -257,9 +254,6 @@ section {
   margin-bottom: 20px;  
   
   header { 
-    //@include span-columns(10);
-    //@include shift(2);
-    //@include omega;
     margin-bottom: 10px;
     
     h1 {
@@ -307,6 +301,10 @@ section {
   aside { 
     @include span-columns(2);
 
+    @include media($medium-display) {
+      @include span-columns(2);
+    }    
+
     @include media($small-display) {
       @include span-columns($small-display-columns);
       @include omega();
@@ -332,12 +330,17 @@ section {
   $header-icon-width: 25px;
 
   article { 
-    @include span-columns(10);
+    @include span-columns($large-display-columns - 2);
     @include omega;
+
+    @include media($medium-display) {
+      @include span-columns($medium-display-columns - 2);
+      @include omega;
+    }    
 
     @include media($small-display) {
       @include span-columns($small-display-columns);
-      @include omega();
+      @include omega;
     }    
 
     margin-bottom: 40px;
