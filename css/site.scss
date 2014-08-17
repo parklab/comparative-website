@@ -24,8 +24,12 @@ $large-display: new-breakpoint(min-width 864px $large-display-columns);
   margin-top: 30px;
   @include outer-container;
 
+  @include media($medium-display) {
+    margin-top: 0;
+  }        
+
   @include media($small-display) {
-    margin-top: 0px;
+    margin-top: 0;
   }        
 }
 
@@ -164,12 +168,33 @@ preamble {
 
 .logos {
   @include span-columns(2);
+  display: table;
+  max-width: 150px;
+
+  @include media($small-display) {
+    @include span-columns(2);
+    @include omega;
+  }        
+
+  @include media($medium-display) {
+    @include span-columns(4);
+    @include omega;
+  }        
+
+  //@include outer-container;
+  /*
+  @include span-columns(2);
 
   @include media($small-display) {
     @include span-columns($small-display-columns);
     @include omega;
     text-align: center;
-  }        
+  } 
+  */       
+}
+
+.logo-image {
+  display: table-cell;
 }
 
 .navigation-title {
@@ -185,11 +210,11 @@ preamble {
   }  
 
   @include media($small-display) {
-    padding-bottom: 0px;    
+    padding-bottom: 0;    
   }          
 
   @include media($medium-display) {
-    padding-bottom: 0px;    
+    padding-bottom: 0;
   }
 }
 
@@ -206,6 +231,8 @@ nav {
 
   @include media($medium-display) {
     height: 70px;
+    @include shift(0);
+    @include span-columns($medium-display-columns);
     @include omega;
   }        
 
@@ -230,6 +257,7 @@ nav {
   }          
 
   @include media($medium-display) {
+    clear: left;
     float: left;
   }          
 }
@@ -308,10 +336,10 @@ section {
     @include media($small-display) {
       @include span-columns($small-display-columns);
       @include omega();
-      //background-color: $primary-contrast-color;
-      @include background-image(linear-gradient(to right, transparent 20%, $light-gray-color 100%));
-      margin-bottom: 0.5em;      
+
       @include border-radius(3px);
+      background-color: transparentize($primary-background-color, 0.7);  
+      margin-bottom: 0.5em;      
     }    
 
     font-size: $base-font-size * 1.5;
