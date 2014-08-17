@@ -179,18 +179,7 @@ preamble {
   @include media($medium-display) {
     @include span-columns(4);
     @include omega;
-  }        
-
-  //@include outer-container;
-  /*
-  @include span-columns(2);
-
-  @include media($small-display) {
-    @include span-columns($small-display-columns);
-    @include omega;
-    text-align: center;
-  } 
-  */       
+  }           
 }
 
 .logo-image {
@@ -226,7 +215,7 @@ nav {
 
   @include border-radius(3px);
 
-  display: block;
+  //display: block;
   height: 40px;
   margin-bottom: 10px;
 
@@ -265,17 +254,15 @@ nav {
 
 
 .teaser-image {
-  width: 150px;
   @include border-radius( 3px );
   @include brightness(97%);
-  //@include box-shadow(0px, 0px, 1px, $primary-contrast-color);  
   border: 1px solid $primary-contrast-color;
+  width: 150px;
 
   @include media($small-display) {
     width: 72px;
-    float: left;
-    //border: 0px;
     margin: 1px;
+    float: left;
   }      
 }
 
