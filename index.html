@@ -49,8 +49,11 @@ layout: default
       <header>
         <h1>Companion Papers</h1>
       </header>
+
+      {% for order in (1..4) %}
       {% for publication_hash in site.data.publications %}
       {% assign publication = publication_hash[1] %}
+      {% if publication.order == order %}
       <h2>{{ publication.journal }}</h2>
       <ul class="paper-icon-list">
         {% for paper in publication.papers %}
@@ -67,6 +70,8 @@ layout: default
         </li>
         {% endfor %}
       </ul>
+      {% endif %}
+      {% endfor %}
       {% endfor %}
     </article> 
   </section>
