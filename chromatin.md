@@ -54,9 +54,9 @@ For background on the ChIP-seq workflow by the consortium, please see Landt _et 
 
 ## <a name="ChIP-seq and ChIP-chip data"></a> ChIP-seq and ChIP-chip data
 
-[Chromatin data sheet (Excel table, 287k)](http://compbio.med.harvard.edu/modencode/webpage/metaData_2014_06_02.xlsxmetaData_2014_06_02.xlsx)
-
 This table contains detailed meta-data for all chromatin datesets, including links to the source file.
+
+View as a [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1N1JObey9Do6fHdgsZUNK7WPrfdEcUqtKYx6CcPflEQg/edit?usp=sharing) or download as an [Excel file](http://compbio.med.harvard.edu/modencode/webpage/metaData_2014_06_02.xlsx).
 
 ## <a name="Input normalized ChIP-seq and ChIP-chip fold enrichment profiles"></a> Input normalized ChIP-seq and ChIP-chip fold enrichment profiles
 
