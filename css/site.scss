@@ -255,7 +255,10 @@ nav {
 
 .teaser-image {
   @include border-radius( 3px );
-  @include brightness(97%);
+  /*
+    removed brightness filters due to problems in older versions of Chrome on Windows
+    @include brightness(97%);
+   */
   border: 1px solid $primary-contrast-color;
   width: 150px;
 
