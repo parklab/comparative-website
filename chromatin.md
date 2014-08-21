@@ -56,7 +56,7 @@ For background on the ChIP-seq workflow by the consortium, please see Landt _et 
 
 This table contains detailed meta-data for all chromatin datesets, including links to the source file.
 
-View as a [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1N1JObey9Do6fHdgsZUNK7WPrfdEcUqtKYx6CcPflEQg/edit?usp=sharing) or download as an [Excel file](http://compbio.med.harvard.edu/modencode/webpage/metaData_2014_06_02.xlsx).
+View as a [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1FgYtnCKiIRCBpXmbAg1Eau14x-jZRV5tTSrcv2UJMTQ/edit?usp=sharing) or download as an [Excel file](http://compbio.med.harvard.edu/modencode/webpage/metaData_2014_06_02_for_website.xlsx).
 
 ## <a name="Input normalized ChIP-seq and ChIP-chip fold enrichment profiles"></a> Input normalized ChIP-seq and ChIP-chip fold enrichment profiles
 
@@ -84,7 +84,7 @@ Aligned DNase-seq data were downloaded from the modENCODE data portal and the [E
 
 ### MNase-seq data
 
-The MNase-seq data were analyzed as described previously38. In brief, tags were mapped to the corresponding reference genome assemblies. The positions at which the number of mapped tags had a Z-score > 7 were considered anomalous due to potential amplification bias. The tags mapped to such positions were discarded. To compute profiles of nucleosomal frequency around TSS, the centers of the fragments were used in the case of paired-end data. In the case of single-end data, tag positions were shifted by the half of the estimated fragment size (estimated using cross-correlation analysis toward the fragment 3'-ends and tags mapping to positive and negative DNA strands were combined). Loess smoothing in the 11-bp window, which does not affect positions of the major minima and maxima on the plots, was applied to reduce the high-frequency noise in the profiles.
+The MNase-seq data were analyzed [as described previously](). In brief, tags were mapped to the corresponding reference genome assemblies. The positions at which the number of mapped tags had a Z-score > 7 were considered anomalous due to potential amplification bias. The tags mapped to such positions were discarded. To compute profiles of nucleosomal frequency around TSS, the centers of the fragments were used in the case of paired-end data. In the case of single-end data, tag positions were shifted by the half of the estimated fragment size (estimated using cross-correlation analysis toward the fragment 3'-ends and tags mapping to positive and negative DNA strands were combined). Loess smoothing in the 11-bp window, which does not affect positions of the major minima and maxima on the plots, was applied to reduce the high-frequency noise in the profiles.
 
 
 ## <a name="GC-content"></a> GC-content
