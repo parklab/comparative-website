@@ -89,7 +89,11 @@ The MNase-seq data were analyzed as described previously38. In brief, tags were 
 
 ## <a name="GC-content"></a> GC-content
 
-We downloaded the 5bp GC% data from the UCSC genome browser annotation download page ([http://hgdownload.cse.ucsc.edu/downloads.html](http://hgdownload.cse.ucsc.edu/downloads.html)) for 
+We downloaded the 5bp GC% data from the UCSC genome browser annotation download page ([http://hgdownload.cse.ucsc.edu/downloads.html](http://hgdownload.cse.ucsc.edu/downloads.html)) for:
+
+*   [human (hg19) [~1.5GB]](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/gc5Base/hg19.gc5Base.txt.gz)
+*   [fly (dm3) [~670KB]](http://hgdownload.cse.ucsc.edu/goldenPath/dm3/database/gc5Base.txt.gz)
+*   [worm (ce10) [~54MB]](http://hgdownload.cse.ucsc.edu/gbdb/ce10/bbi/gc5Base.bw) (in bigWig format, need to convert into wig using the [bigwig2wig](http://hgdownload.cse.ucsc.edu/admin/exe) program)
 
 Centering at every 5 bp bin, we calculated the running median of the GC% of the surrounding 100 bp (i.e., 105 bp in total). GC scores were then binned into 10 bp (fly and worm) or 50 bp (human) non-overlapping bins.
 
@@ -106,6 +110,9 @@ PhastCons scores were then binned into 10 bp (fly and worm) or 50 bp (human) non
 
 We generated empirial genomic sequence mappability tracks using input-DNA sequencing data. After merging input reads up to 100M, reads were extended to 149 bp which corresponds to the shift of 74 bp in signal tracks. The union set of empirically mapped regions was obtained. They are available here:
 
+*   [human (hg19)]()
+*   [fly (dm3)]()
+*   [worm (ce10) ]()
 
 ## <a name="Coordinates of unassembled genomic sequences"></a>Coordinates of unassembled genomic sequences
 
