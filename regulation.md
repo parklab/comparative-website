@@ -645,7 +645,7 @@ High-occupancy target (HOT) regions and extreme-occupancy target (XOT) regions f
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/HOT/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/HOT/)
+[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/hotRegions/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Worm/hotRegions/)
 
 ## Data Format
 
@@ -935,7 +935,7 @@ High-occupancy target (HOT) regions and extreme-occupancy target (XOT) regions f
 
 ## Data Source
 
-[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/HOT/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/HOT/)
+[http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/hotRegions/](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Regulation/Fly/hotRegions/)
 
 ## Data Format
 
