@@ -50,7 +50,7 @@ For background on the ChIP-seq workflow by the consortium, please see Landt _et 
 *   [Cross-species chromatin browser](#Cross-species chromatin browser)
 *   [Protein-coding gene annotation and RNA-seq gene expression data](#Protein-coding gene annotation and RNA-seq gene expression data)
 *   [Human-Worm-Fly ortholog Lists](#Human-Worm-Fly ortholog Lists)
-
+*   [Human, Worm, and Fly Enhancers](#enhancers)   
 
 ## <a name="ChIP-seq and ChIP-chip data"></a> ChIP-seq and ChIP-chip data
 
@@ -127,7 +127,6 @@ The data were downloaded from published paper XXX and YYY. Here are the genomic 
 
 The code and instruction for running hiHMM can be accessed [here](https://sites.google.com/site/kasohn/software).
 
-
 ## <a name="Cross-species chromatin browser"></a> Cross-species chromatin browser
 
 The chromatin state definition can be accessed via the [ENCODE-X Browser](http://encode-x.med.harvard.edu/data_sets/chromatin/).
@@ -144,3 +143,13 @@ Gene expression data can be accessed from the [modENCODE/ENCODE transcription pa
 ## <a name="Human-Worm-Fly ortholog lists"></a> Human-Worm-Fly ortholog lists
 
 MIT Human-Worm-Fly Orthologs: [Modencode.merged.orth20120611_wfh_comm_all.csv](http://cmptxn.gersteinlab.org/Modencode.merged.orth20120611_wfh_comm_all.csv)
+
+## <a name="enhancers"></a> Human, Worm, and Fly Enhancers
+
+Enhancers were identified using TSS-distal DHSs and p300 and CBP-1 binding sites. The positions listed in the files are a subset of TSS-distal DHSs (human, fly), p300 (human) and CBP-1 (worm) binding sites that are classified as enhancers.
+
+* [Enhancer Sites](http://compbio.med.harvard.edu/modencode/webpage/enh_calls_final/comparative_enhancer_calls.tar.gz) (tar.gz file)  
+
+The classification was optimized to obtain a high confidence set that is not necessarily very inclusive. For additional information please see the README file in the archive.
+
+
