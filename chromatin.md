@@ -152,7 +152,7 @@ The chromatin state definition can be accessed via the [ENCODE-X Browser](http:/
 
 ## <a name="Protein-coding gene annotation and RNA-seq gene expression data"></a> Protein-coding gene annotation and RNA-seq gene expression data
 
-Gene expression data can be accessed from the [modENCODE/ENCODE transcription page](http://encodedcc.sdsc.edu/ftp/modENCODE_VS_ENCODE/Transcription/).
+Gene expression data can be accessed from the [modENCODE/ENCODE transcriptome page](../transcriptome).
 
 *   Human protein-coding gene annotation, in gtf format, from GENCODE v10: [gen10_CDS+exons_only_protein-coding_only.gtf.gz](http://cmptxn.gersteinlab.org/Comparative_Datasets.xlsx)
 *   Worm protein-coding gene annotation, in gtf format, from modENCODE June 2012 freeze: [AG1201.integrated_transcripts_strictly_coding.ws220.gtf.gz](http://cmptxn.gersteinlab.org/AG1201.integrated_transcripts_strictly_coding.ws220.gtf.gz)
