@@ -98,6 +98,9 @@ Centering at every 5 bp bin, we calculated the running median of the GC% of the 
 
 PhastCons scores were then binned into 10 bp (fly and worm) or 50 bp (human) non-overlapping bins.
 
+*   [human (hg19)](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/phastCons46way/vertebrate/)
+*   [fly (dm3) ](http://hgdownload.cse.ucsc.edu/goldenPath/dm3/phastCons15way/)
+*   [worm (ce10)](http://hgdownload.cse.ucsc.edu/goldenPath/ce10/phastCons7way/)
 
 ## <a name="Genomic sequence mappability tracks"></a> Genomic sequence mappability tracks
 
