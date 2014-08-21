@@ -111,6 +111,10 @@ We generated empirial genomic sequence mappability tracks using input-DNA sequen
 
 We downloaded the "Gap" table from the UCSC genome browser download page ([http://hgdownload.cse.ucsc.edu/downloads.html](http://hgdownload.cse.ucsc.edu/downloads.html)):
 
+*   [human (hg19)](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/gap.txt.gz)
+*   [fly (dm3)](http://hgdownload.cse.ucsc.edu/goldenPath/dm3/database/) (search for chr*_gap.txt.gz)
+
+There are no known unassembled regions in worm.
 
 ## <a name="Worm TSS definition based on capRNA-seq (capTSS)"></a> Worm TSS definition based on capRNA-seq (capTSS)
 
@@ -122,6 +126,10 @@ Briefly, short 5'-capped RNA from total nuclear RNA of mixed stage embryos were 
 
 The data were downloaded from published paper XXX and YYY. Here are the genomic coordinates used in our study.
 
+*   [human (hg19)]()
+*   [fly (dm3)]()
+
+There is no Hi-C data for worm.
 
 ## <a name="hiHMM chromatin state tracks"></a> hiHMM chromatin state tracks
 *   [human (hg19)]()
