@@ -134,12 +134,14 @@ Briefly, short 5'-capped RNA from total nuclear RNA of mixed stage embryos were 
 The data were downloaded from  [Dixon _et al._, "Topological domains in mammalian genomes identified by
 analysis of chromatin interactions", Nature (2012)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3356448) and [Sexton _et al._, "Three-dimensional folding and functional organization principles of the Drosophila genome", Cell (2012)](http://www.sciencedirect.com/science/article/pii/S0092867412000165). Here are the genomic coordinates used in our study:
 
-*   [human (hg19)]()
-*   [fly (dm3)]()
+* [human (hg19) - IMR90](http://compbio.med.harvard.edu/modencode/webpage/hic/HiC_IMR90.bb)
+* [human (hg19) - hESC](http://compbio.med.harvard.edu/modencode/webpage/hic/HiC_hESC.bb)
+* [fly (dm3) - LE](http://compbio.med.harvard.edu/modencode/webpage/hic/HiC_EL.bb)
 
 There is no Hi-C data for worm.
 
 ## <a name="hiHMM chromatin state tracks"></a> hiHMM chromatin state tracks
+
 *   [human (hg19)]()
 *   [fly (dm3)]()
 *   [worm (ce10) ]()
