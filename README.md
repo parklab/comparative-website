@@ -38,6 +38,27 @@ $ gem install bitters
 
 Depending on your system your might have to run those as superuser using ```sudo```.
 
+## Updating Content
+
+### Papers
+
+Paper meta information and content of the data pages is in ```chromatin.md```, ```regulation.md``` and ``` transcription.md```. The header of the files contains the meta information in YAML format and the body of the pages is the content of the data page in Markdown format.
+
+### Companion Papers
+
+Companion paper information is stored in Jekyll [data files](http://jekyllrb.com/docs/datafiles/) in the ```_data/publications``` directory with one file per journal. Companion paper meta information is provided using the following fields:
+
+``` yaml
+  - authors: Sisu et al.
+    title: "Comparative analysis of pseudogenes across three phyla"
+    meta: "Proceedings of the National Academy of Sciences USA, in press, 2014"
+    url: 
+    data_url: http://psicube.pseudogene.org
+    software_url: 
+```
+
+
+
 
 ## Deployment
 
