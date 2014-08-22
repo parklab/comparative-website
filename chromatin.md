@@ -135,16 +135,19 @@ The data were downloaded from  [Dixon _et al._, "Topological domains in mammalia
 analysis of chromatin interactions", Nature (2012)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3356448) and [Sexton _et al._, "Three-dimensional folding and functional organization principles of the Drosophila genome", Cell (2012)](http://www.sciencedirect.com/science/article/pii/S0092867412000165). Here are the genomic coordinates used in our study:
 
 * [human (hg19) - IMR90](http://compbio.med.harvard.edu/modencode/webpage/hic/HiC_IMR90.bb)
-* [human (hg19) - hESC](http://compbio.med.harvard.edu/modencode/webpage/hic/HiC_hESC.bb)
+* [human (hg19) - H1-hESC](http://compbio.med.harvard.edu/modencode/webpage/hic/HiC_hESC.bb)
 * [fly (dm3) - LE](http://compbio.med.harvard.edu/modencode/webpage/hic/HiC_EL.bb)
 
 There is no Hi-C data for worm.
 
 ## <a name="hiHMM chromatin state tracks"></a> hiHMM chromatin state tracks
 
-*   [human (hg19)]()
-*   [fly (dm3)]()
-*   [worm (ce10) ]()
+* [human (hg19) - GM12878](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.human_GM.bb)
+* [human (hg19) - H1-hESC](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.human_hESC.bb)
+* [fly (dm3) - LE](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.fly_EL.bb)
+* [fly (dm3) - L3](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.fly_L3.bb)
+* [worm (ce10) - EE](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.worm_EE.bb)
+* [worm (ce10) - L3](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.worm_L3.bb)
 
 The code and instruction for running hiHMM can be accessed [here](https://sites.google.com/site/kasohn/software).
 
