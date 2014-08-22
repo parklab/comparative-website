@@ -110,9 +110,9 @@ PhastCons scores were then binned into 10 bp (fly and worm) or 50 bp (human) non
 
 We generated empirial genomic sequence mappability tracks using input-DNA sequencing data. After merging input reads up to 100M, reads were extended to 149 bp which corresponds to the shift of 74 bp in signal tracks. The union set of empirically mapped regions was obtained. They are available here:
 
-*   [human (hg19)]()
-*   [fly (dm3)]()
-*   [worm (ce10) ]()
+*   [human (hg19)](http://compbio.med.harvard.edu/modencode/webpage/mappability/mappability.hg19.wig.tdf)
+*   [fly (dm3)](http://compbio.med.harvard.edu/modencode/webpage/mappability/mappability.dm3.wig.tdf)
+*   [worm (ce10) ](http://compbio.med.harvard.edu/modencode/webpage/mappability/mappability.ce10.wig.tdf)
 
 ## <a name="Coordinates of unassembled genomic sequences"></a>Coordinates of unassembled genomic sequences
 
