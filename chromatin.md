@@ -84,7 +84,7 @@ Aligned DNase-seq data were downloaded from the modENCODE data portal and the [E
 
 ### MNase-seq data
 
-The MNase-seq data were analyzed [as described previously](). In brief, tags were mapped to the corresponding reference genome assemblies. The positions at which the number of mapped tags had a Z-score > 7 were considered anomalous due to potential amplification bias. The tags mapped to such positions were discarded. To compute profiles of nucleosomal frequency around TSS, the centers of the fragments were used in the case of paired-end data. In the case of single-end data, tag positions were shifted by the half of the estimated fragment size (estimated using cross-correlation analysis toward the fragment 3'-ends and tags mapping to positive and negative DNA strands were combined). Loess smoothing in the 11-bp window, which does not affect positions of the major minima and maxima on the plots, was applied to reduce the high-frequency noise in the profiles.
+The MNase-seq data were analyzed as described in [Tolstorukov _et al._, "Histone variant H2A.Bbd is associated with active transcription and mRNA processing in human cells", Molecular Cell (2012)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3708478). In brief, tags were mapped to the corresponding reference genome assemblies. The positions at which the number of mapped tags had a Z-score > 7 were considered anomalous due to potential amplification bias. The tags mapped to such positions were discarded. To compute profiles of nucleosomal frequency around TSS, the centers of the fragments were used in the case of paired-end data. In the case of single-end data, tag positions were shifted by the half of the estimated fragment size (estimated using cross-correlation analysis toward the fragment 3'-ends and tags mapping to positive and negative DNA strands were combined). Loess smoothing in the 11-bp window, which does not affect positions of the major minima and maxima on the plots, was applied to reduce the high-frequency noise in the profiles.
 
 
 ## <a name="GC-content"></a> GC-content
@@ -131,7 +131,8 @@ Briefly, short 5'-capped RNA from total nuclear RNA of mixed stage embryos were 
 
 ## <a name="Hi-C defined topological domains"></a> Hi-C defined topological domains
 
-The data were downloaded from published paper XXX and YYY. Here are the genomic coordinates used in our study.
+The data were downloaded from  [Dixon _et al._, "Topological domains in mammalian genomes identified by
+analysis of chromatin interactions", Nature (2012)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3356448) and [Sexton _et al._, "Three-dimensional folding and functional organization principles of the Drosophila genome", Cell (2012)](http://www.sciencedirect.com/science/article/pii/S0092867412000165). Here are the genomic coordinates used in our study:
 
 *   [human (hg19)]()
 *   [fly (dm3)]()
