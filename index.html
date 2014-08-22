@@ -22,7 +22,7 @@ layout: default
         <header>
           <h2>{{ page.paper.authors_short }}</h2>
           <h1>{{ page.paper.title }}</h1>
-          <h3>{{ page.paper.meta }}.&nbsp;&nbsp;<a href="{{ page.paper.url }}"><i class="fa fa-external-link"></i></a></h3>
+          <h3>{{ page.paper.meta }}.{% if page.paper.url %}&nbsp;&nbsp;<a href="{{ page.paper.url }}"><i class="fa fa-external-link"></i></a>{% endif %}</h3>
         </header>
 
         <h2 class="data-page"><a href="{{ page.url | prepend: site.baseurl }}"><i class="fa fa-database"></i> Data Page</a></h2>
@@ -58,7 +58,7 @@ layout: default
         {% for paper in publication.papers %}
         <li>
           <citation>
-          {{ paper.authors }}, <b>{{ paper.title }}</b>, {{ paper.meta }}.&nbsp;<a href="{{ paper.url }}"><i class="fa fa-external-link"></i></a>
+          {{ paper.authors }}, <b>{{ paper.title }}</b>, {{ paper.meta }}.{% if paper.url %}&nbsp;<a href="{{ paper.url }}"><i class="fa fa-external-link"></i></a>{% endif %}
           {% if paper.data_url %}
             (<a href="{{ paper.data_url }}">Data</a>)
           {% endif %}
