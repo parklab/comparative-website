@@ -143,7 +143,7 @@ There is no Hi-C data for worm.
 ## <a name="hiHMM chromatin state tracks"></a> hiHMM chromatin state tracks
 
 * [human (hg19) - GM12878](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.human_GM.bb)
-* [human (hg19) - H1-hESC](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.human_hESC.bb)
+* [human (hg19) - H1-hESC](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.human_H1.bb)
 * [fly (dm3) - LE](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.fly_EL.bb)
 * [fly (dm3) - L3](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.fly_L3.bb)
 * [worm (ce10) - EE](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.worm_EE.bb)
