@@ -40,9 +40,9 @@ Depending on your system your might have to run those as superuser using ```sudo
 
 ## Updating Content
 
-### Papers
+### Main Papers
 
-Paper meta information and content of the data pages is in ```chromatin.md```, ```regulation.md``` and ``` transcription.md```. The header of the files contains the meta information in YAML format and the body of the pages is the content of the data page in Markdown format.
+Paper meta information and content of the data pages is stored in ```chromatin.md```, ```regulation.md``` and ``` transcription.md```. The header of the files contains the meta information in YAML format and the body of the pages is the content of the data page in Markdown format.
 
 ### Companion Papers
 
@@ -57,7 +57,9 @@ Companion paper information is stored in Jekyll [data files](http://jekyllrb.com
     software_url: 
 ```
 
+The ```url```, ```data_url```, and ```software_url``` fields are optional. All other fields are required.
 
+The content of the ```url``` field is used to link to the paper on the website of the publisher or in a repository such as PubMed Central. The content of the ```data_url``` and ```software_url``` fields is used to create addtional links to data and software related to the publication, respectively.
 
 
 ## Deployment
