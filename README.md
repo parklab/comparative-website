@@ -42,7 +42,7 @@ Depending on your system your might have to run those as superuser using ```sudo
 
 ### Main Papers
 
-Paper meta information and content of the data pages is stored in ```chromatin.md```, ```regulation.md``` and ``` transcription.md```. The header of the files contains the meta information in YAML format and the body of the pages is the content of the data page in Markdown format.
+Paper meta information and content of the data pages is stored in ```chromatin.md```, ```regulation.md``` and ``` transcriptome.md```. The header of the files contains the meta information in YAML format and the body of the pages is the content of the data page in Markdown format.
 
 ### Companion Papers
 
