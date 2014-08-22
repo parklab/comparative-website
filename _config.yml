@@ -1,11 +1,8 @@
 # Site settings
 title: Comparative modENCODE/ENCODE
-email: peter_park@hms.harvard.edu
+email: encode-help@lists.stanford.edu
 description: A website for a species comparison using modENCODE and ENCODE data.
 baseurl: "/comparative-website"
-url: "http://www.encodeproject.org/comparative"
-twitter_username: 
-github_username:  
 
 # Build settings
 markdown: kramdown
