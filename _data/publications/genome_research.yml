@@ -5,32 +5,26 @@ papers:
     title: "Comparison of D. melanogaster and C. elegans developmental stages, tissues, and cells by modENCODE RNA-seq data"
     meta: "Genome Research 24:1086-1101, 2014"
     url: http://genome.cshlp.org/content/24/7/1086.full 
-    type: companion
   - authors: Lubelsky et al.
     title: "DNA replication and transcription programs respond to the same chromatin cues"
     meta: "Genome Research 24:1102-1114, 2014"
     url: http://genome.cshlp.org/content/24/7/1102.full
-    type: companion
   - authors: Arthur et al.
     title: "Evolution of H3K27me3-marked chromatin is linked to gene expression evolution and to patterns of gene duplication and diversification"
     meta: "Genome Research 24:1115-1124, 2014"
     url: http://genome.cshlp.org/content/24/7/1115.full
-    type: companion
   - authors: Chen et al.
     title: "Comparative validation of the D. melanogaster modENCODE transcriptome annotation"
     meta: "Genome Research 24:1209-1223, 2014"
     url: http://genome.cshlp.org/content/24/7/1209.full
-    type: companion
   - authors: Slattery et al.
     title: "Diverse patterns of genomic targeting by transcriptional regulators in Drosophila melanogaster"
     meta: "Genome Research 24:1224-1235, 2014"
     url: http://genome.cshlp.org/content/24/7/1224.full
-    type: companion
   - authors: Chen et al.
     title: "Extreme HOT regions are CpG-dense promoters in C. elegans and humans"
     meta: "Genome Research 24:1138-1146, 2014"
     url: http://genome.cshlp.org/content/24/7/1138.full
-    type: companion
   - authors: Wen et al.
     title: "Diversity of miRNAs, siRNAs, and piRNAs across 25 Drosophila cell lines"
     meta: "Genome Research 24:1236-1250, 2014"

@@ -5,28 +5,23 @@ papers:
     title: "Design of RNA splicing analysis null models for post hoc filtering of Drosophila head RNA-Seq data with the splicing analysis kit (Spanki)"
     meta: "BMC Bioinformatics, 14:320, 2013"
     url: http://www.biomedcentral.com/1471-2105/14/320
-    type: companion
   - authors: Bolye et al.
     title: "Genome-guided transcript assembly by integrative analysis of RNA sequence data"
     meta: "Nature Biotechnolgy 32:341-6, 2014"
     url: http://www.nature.com/nbt/journal/v32/n4/full/nbt.2850.html
-    type: companion
   - authors: Mohammed et al.
     title: "The impact of age, biogenesis, and genomic clustering on Drosophila microRNA evolution"
     meta: "RNA, 19:1295-308, 2013"
     url: http://rnajournal.cshlp.org/content/19/9/1295.long
-    type: companion
   - authors: Trinh et al.
     title: "Cloud-based uniform ChIP-Seq processing tools for modENCODE and ENCODE"
     meta: "BMC Genomics, 14:494, 2013"
     url: http://www.biomedcentral.com/1471-2164/14/494
-    type: companion
   - authors: Sisu et al.
     title: "Comparative analysis of pseudogenes across three phyla"
     meta: "Proceedings of the National Academy of Sciences USA, in press, 2014"
     url: 
     data_url: http://psicube.pseudogene.org
-    type: companion
 
 # To be added later:
 # Regulation of alternative splicing in Drosophila by 56 RNA binding proteins, Graveley, Brenner, Celniker groups

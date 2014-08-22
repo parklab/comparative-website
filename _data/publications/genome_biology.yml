@@ -5,16 +5,12 @@ papers:
     title: "Tissue-specific direct targets of Caenorhabditis elegans Rb/E2F dictate distinct somatic and germline programs"
     meta: "Genome Biology 14:R5, 2013"
     url: http://genomebiology.com/content/14/1/R5
-    type: companion
   - authors: Yan et al. 
     title: "OrthoClust: An orthology-based network framework for clustering data across multiple species"
     meta: "Genome Biology, in press, 2014" #" 15:R100, 2014"
     url: 
     software_url: https://github.com/gersteinlab/OrthoClust    
-    type: companion     
   - authors: Lee et al.
     title: "DNA copy number evolution in Drosophila cell lines"
     meta: "Genome Biology, in press, 2014"
     url: 
-    type: companion
-
