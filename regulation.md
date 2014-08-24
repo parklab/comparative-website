@@ -87,7 +87,7 @@ All human datasets were processed uniformly for the steps below. Here we provide
 <iframe width='800px' height='300px' scrolling=no frameborder='0' src="https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/pubhtml/sheet?headers=false&gid=1301528230"></iframe>
 -->
 
-[View](https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/pubhtml/sheet) on Google Docs or [(Download)](https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/export)
+[View](https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo) on Google Docs or [(Download)](https://docs.google.com/spreadsheets/d/1CLvyljx02arfj5CmWFwGuPwrXmlUCC2Us0ZV5rpVhjo/export)
 
 ## Data Format
 
