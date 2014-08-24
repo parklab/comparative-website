@@ -104,8 +104,8 @@ Human enhancers are from Yip et al. "Classification of genomic regions based on 
 ## Data Source
 
 *   Human enhancers used for TAR analysis: [Enhancers](http://encodenets.gersteinlab.org/metatracks/)
-*   Worm and fly enhancers used for TAR analysis: [Enhancers](ftp://encodeftp.cse.ucsc.edu/users/akundaje/enhancers/)
-*   Alternative human enhancers: [Enhancers](ftp://encodeftp.cse.ucsc.edu/users/akundaje/enhancers/)
+*   Worm and fly enhancers used for TAR analysis: [Enhancers](http://encodedcc.sdsc.edu/ftp/users/akundaje/enhancers/)
+*   Alternative human enhancers: [Enhancers](http://encodedcc.sdsc.edu/ftp/users/akundaje/enhancers/)
 
 # 8. Clustering of ncRNAs and TARs with Co-expression Modules
 
