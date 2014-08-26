@@ -19,8 +19,8 @@ papers:
     url: http://www.biomedcentral.com/1471-2164/14/494
   - authors: Sisu et al.
     title: "Comparative analysis of pseudogenes across three phyla"
-    meta: "Proceedings of the National Academy of Sciences USA, in press, 2014"
-    url: 
+    meta: "Proceedings of the National Academy of Sciences USA, published online ahead of print, 2014"
+    url: http://dx.doi.org/10.1073/pnas.1407293111
     data_url: http://psicube.pseudogene.org
 
 # To be added later:
