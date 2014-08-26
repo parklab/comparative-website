@@ -83,21 +83,33 @@ For the fly data, genomic DNA Tiling Arrays v2.0 (Affymetrix) were used to hybri
 
 We performed joint chromatin state segmentation on the human, fly, and worm ChIP-seq histone modification data using a hierarchically linked infinite hidden Markov model (hiHMM). The software and associated documentation is accessible [here](https://sites.google.com/site/kasohn/software).
 
-* [human (hg19) - GM12878](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.human_GM.bb)
-* [human (hg19) - H1-hESC](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.human_H1.bb)
-* [fly (dm3) - LE](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.fly_EL.bb)
-* [fly (dm3) - L3](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.fly_L3.bb)
-* [worm (ce10) - EE](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.worm_EE.bb)
-* [worm (ce10) - L3](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.worm_L3.bb)
+* [human (hg19) - H1-hESC](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.human_H1.bed)
+* [human (hg19) - GM12878](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.human_GM.bed)
+* [fly (dm3) - LE](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.fly_EL.bed)
+* [fly (dm3) - L3](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.fly_L3.bed)
+* [worm (ce10) - EE](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.worm_EE.bed)
+* [worm (ce10) - L3](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.worm_L3.bed)
 
 
 ## <a name="heterochromatin"></a> Heterochromatin domains
+
+* [human (hg19) - H1-hESC](http://compbio.med.harvard.edu/modencode/webpage/heterochromatin/het.call.human.H1-hESC.bed)
+* [human (hg19) - K562](http://compbio.med.harvard.edu/modencode/webpage/heterochromatin/het.call.human.K562.bed)
+* [fly (dm3) - L3](http://compbio.med.harvard.edu/modencode/webpage/heterochromatin/het.call.fly.L3.bed)
+* [worm (ce10) - L3](http://compbio.med.harvard.edu/modencode/webpage/heterochromatin/het.call.worm.L3.bed)
 
 
 
 
 ## <a name="LAD"></a> Lamina Associated Domains (LAD)
 
+* [human (hg19) - fibroblast](http://compbio.med.harvard.edu/modencode/webpage/lad/human.fibroblast.DamID.hg19.bed )
+* [fly (dm3) - Kc](http://compbio.med.harvard.edu/modencode/webpage/lad/fly.kc.DamID.dm3.bed)
+* [worm (ce10) - mixed embryos](http://compbio.med.harvard.edu/modencode/webpage/lad/worm.mixedE.LEM2.ce10.bed)
+
+
+human.helas.laminAC.hg19.bed  ?
+human.helas.laminB.hg19.bed   ?
 
 
 
@@ -106,13 +118,26 @@ We performed joint chromatin state segmentation on the human, fly, and worm ChIP
 The data were downloaded from  [Dixon _et al._, "Topological domains in mammalian genomes identified by
 analysis of chromatin interactions", Nature (2012)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3356448) and [Sexton _et al._, "Three-dimensional folding and functional organization principles of the Drosophila genome", Cell (2012)](http://www.sciencedirect.com/science/article/pii/S0092867412000165). Here are the genomic coordinates used in our study:
 
-* [human (hg19) - IMR90](http://compbio.med.harvard.edu/modencode/webpage/hic/HiC_IMR90.bb)
-* [human (hg19) - H1-hESC](http://compbio.med.harvard.edu/modencode/webpage/hic/HiC_hESC.bb)
-* [fly (dm3) - LE](http://compbio.med.harvard.edu/modencode/webpage/hic/HiC_EL.bb)
+* [human (hg19) - IMR90](http://compbio.med.harvard.edu/modencode/webpage/hic/IMR90_domains_hg19.bed)
+* [human (hg19) - H1-hESC](http://compbio.med.harvard.edu/modencode/webpage/hic/hESC_domains_hg19.bed)
+* [fly (dm3) - LE](http://compbio.med.harvard.edu/modencode/webpage/hic/HiC_EL.bb): in bigBED format
 
 There is no known published Hi-C data for worm.
 
+
+
+
 ## <a name="inferred domains"></a> Chromatin-based inferred topological domain boundaries
+
+* fly (dm3) LE: [boundary score](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Fly/LE/fly_eucl_nor_boundary_score.wig), [boundary call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Fly/LE/fly_eucl_nor_boundary_7.bed), and [domain call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Fly/LE/fly_eucl_nor_domain_7.bed)
+
+* fly (dm3) L3: [boundary score](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Fly/L3/fly_eucl_nor_boundary_score.wig), [boundary call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Fly/L3/fly_eucl_nor_boundary_7.bed), and [domain call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Fly/L3/fly_eucl_nor_domain_7.bed)
+
+* worm (ce10) EE: [boundary score](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Worm/EE/worm_eucl_nor_EE_boundary_score.wig), [boundary call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Worm/EE/worm_eucl_nor_EE_boundary_7.bed), and [domain call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Worm/EE/worm_eucl_nor_EE_domain_7.bed)
+
+* worm (ce10) L3: [boundary score](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Worm/L3/worm_eucl_nor_L3_boundary_score.wig), [boundary call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Worm/L3/worm_eucl_nor_L3_boundary_7.bed), and [domain call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Worm/L3/worm_eucl_nor_L3_domain_7.bed)
+
+
 
 
 
@@ -144,9 +169,9 @@ Data and the description of these data can be found at the [modENCODE/ENCODE tra
 
 We generated empirical genomic sequence mappability tracks using input-DNA sequencing data. After merging input reads up to 100M, reads were extended to 149 bp which corresponds to the shift of 74 bp in signal tracks. The union set of empirically mapped regions was obtained. They are available here:
 
-*   [human (hg19)](http://compbio.med.harvard.edu/modencode/webpage/mappability/mappability.hg19.wig.tdf)
-*   [fly (dm3)](http://compbio.med.harvard.edu/modencode/webpage/mappability/mappability.dm3.wig.tdf)
-*   [worm (ce10) ](http://compbio.med.harvard.edu/modencode/webpage/mappability/mappability.ce10.wig.tdf)
+*   [human (hg19)](http://compbio.med.harvard.edu/modencode/webpage/mappability/mappable.hg19.bed)
+*   [fly (dm3)](http://compbio.med.harvard.edu/modencode/webpage/mappability/mappable.dm3.bed )
+*   [worm (ce10) ](http://compbio.med.harvard.edu/modencode/webpage/mappability/mappable.ce10.bed)
 
 In addition to this empirically derived genome-wide sequence mappability tracks, we could also compare them with known unassembled genomic regions by considering the “Gap” table from the [UCSC genome browser](http://hgdownload.cse.ucsc.edu/downloads.html):
 
@@ -154,6 +179,8 @@ In addition to this empirically derived genome-wide sequence mappability tracks,
 *   [fly (dm3)](http://hgdownload.cse.ucsc.edu/goldenPath/dm3/database/) (search for chr*_gap.txt.gz)
 
 There are no known unassembled regions in worm.
+
+
 
 
 
