@@ -5,12 +5,12 @@ title: Chromatin
 permalink: /chromatin/
 subproject: true
 teaser: /assets/images/chromatin.png
-abstract: Genome function is dynamically regulated in part by chromatin, which consists of the histones, non-histone proteins and RNA molecules that package DNA. Studies in Caenorhabditis elegans and Drosophila melanogaster have contributed notably to our understanding of molecular mechanisms of genome function in humans, and have revealed conservation of chromatin components and mechanisms. Nevertheless, the three organisms have markedly different genome sizes, chromosome architecture and gene organization. On human and fly chromosomes, for example, pericentric heterochromatin flanks single centromeres, whereas worm chromosomes have dispersed heterochromatin-like regions enriched in the distal chromosomal ‘arms’, and centromeres distributed along their lengths. To systematically investigate chromatin organization and associated gene regulation across species, we generated and analysed a large collection of genome-wide chromatin data sets from cell lines and developmental stages in worm, fly and human. Here we present over 800 newdata sets from our ENCODE and modENCODE consortia, bringing the total to over 1,400. Comparison of combinatorial patterns of histone modifications, nuclear lamina-associated domains, the organization of large-scale topological domains, the chromatin environment at promoters and enhancers, nucleosome positioning, and DNA replication patterns reveals many conserved features of chromatin organization among the three organisms. We also find notable differences in the composition and locations of repressive chromatin. These data sets and analyses provide a rich resource for comparative and species-specific investigations of chromatin composition, organization and function.
+abstract: Genome function is dynamically regulated in part by chromatin, which consists of the histones, non-histone proteins and RNA molecules that package DNA. Studies in _Caenorhabditis elegans_ (worm) and _Drosophila melanogaster_ (fly) have contributed notably to our understanding of molecular mechanisms of genome function in humans, and have revealed conservation of chromatin components and mechanisms. Nevertheless, the three organisms have markedly different genome sizes, chromosome architecture and gene organization. On human and fly chromosomes, for example, pericentric heterochromatin flanks single centromeres, whereas worm chromosomes have dispersed heterochromatin-like regions enriched in the distal chromosomal ‘arms’, and centromeres distributed along their lengths. To systematically investigate chromatin organization and associated gene regulation across species, we generated and analysed a large collection of genome-wide chromatin data sets from cell lines and developmental stages in worm, fly and human. Here we present over 800 new data sets from our ENCODE and modENCODE consortia, bringing the total to over 1,400. Comparison of combinatorial patterns of histone modifications, nuclear lamina-associated domains, the organization of large-scale topological domains, the chromatin environment at promoters and enhancers, nucleosome positioning, and DNA replication patterns reveals many conserved features of chromatin organization among the three organisms. We also find notable differences in the composition and locations of repressive chromatin. These data sets and analyses provide a rich resource for comparative and species-specific investigations of chromatin composition, organization and function.
 
 paper:
   title: Comparative analysis of metazoan chromatin organization
 
-  authors: Ho JWK*, Jung YL*, Liu T*, Alver BH, Lee S, Ikegami K, Sohn KA, Minoda A, Tolstorukov MY, Appert A, Parker SCJ, Gu T, Kundaje A, Riddle NC, Bishop E, Egelhofer TA, Hu SS, Alekseyenko AA, Rechtsteiner A, Asker D, Belsky JA, Bowman SK, Chen QB, Chen RA, Day DS, Dong Y, Dose AC, Duan X, Epstein CB, Ercan S, Feingold EA, Ferrari F, Garrigues JM, Gehlenborg N, Good PJ, Haseley P, He D, Herrmann M, Hofman MM, Jeffers TE, Kharchenko PV, Kolasinska-Zwierz P, Kotwaliwale CV, Kumar N, Langley SA, Larschan EN, LatorreI, Libbrecht MW, Lin X, Park R, Pazin MJ, Pham HN, Plachetka A, Qin B, Schwartz YB, Shoresh N, Stempor P, Vielle A, Wang C, Whittle CM, Xue H, Kingston RE, Kim JH, Bernstein BE, Dernburg AF, Pirrotta V, Kuroda MI, Noble WS, Tullius TD, Kellis M, MacAlpine DM**, Strome S**, Elgin SCR**, Liu XS**, Lieb JD**, Ahringer J**, Karpen GH**, Park PJ**
+  authors: Ho JWK*, Jung YL*, Liu T*, Alver BH^, Lee S^, Ikegami K^, Sohn KA^, Minoda A^, Tolstorukov MY^, Appert A^, Parker SCJ^, Gu T^, Kundaje A^, Riddle NC^, Bishop E^, Egelhofer TA^, Hu SS^, Alekseyenko AA^, Rechtsteiner A^, Asker D, Belsky JA, Bowman SK, Chen QB, Chen RA, Day DS, Dong Y, Dose AC, Duan X, Epstein CB, Ercan S, Feingold EA, Ferrari F, Garrigues JM, Gehlenborg N, Good PJ, Haseley P, He D, Herrmann M, Hofman MM, Jeffers TE, Kharchenko PV, Kolasinska-Zwierz P, Kotwaliwale CV, Kumar N, Langley SA, Larschan EN, LatorreI, Libbrecht MW, Lin X, Park R, Pazin MJ, Pham HN, Plachetka A, Qin B, Schwartz YB, Shoresh N, Stempor P, Vielle A, Wang C, Whittle CM, Xue H, Kingston RE, Kim JH, Bernstein BE, Dernburg AF, Pirrotta V, Kuroda MI, Noble WS, Tullius TD, Kellis M, MacAlpine DM**, Strome S**, Elgin SCR**, Liu XS**, Lieb JD**, Ahringer J**, Karpen GH**, Park PJ**
 
   authors_short: Ho et al.
 
@@ -21,7 +21,7 @@ paper:
 
 ## Overall Description
 
-The datasets were generated by the modENCODE (model organism Encyclopedia of DNA Elements) and ENCODE consortia in 2007-2012, funded by National Human Genome Research Institute (NHGRI). Please see [http://www.genome.gov/26524507](http://www.genome.gov/26524507) and [http://www.genome.gov/Encode/](http://www.genome.gov/Encode/) for more information about the projects.
+The datasets were generated by the modENCODE (model organism Encyclopedia of DNA Elements) and ENCODE consortia in 2007-2012, funded by National Human Genome Research Institute (NHGRI). Please see [http://www.genome.gov/modencode/](http://www.genome.gov/modencode/) and [http://www.genome.gov/encode/](http://www.genome.gov/encode/) for more information about the projects.
 
 These data consist of ChIP-seq and ChIP-chip profiles for histone modifications and chromosomal proteins in fly, worm, and human, as well as several related data sets. The ChIP-chip datasets were produced on Affymetrix (fly) or NimbleGen (worm) arrays. The ChIP-seq datasets were generated on the Illumina sequencers.
 
@@ -29,8 +29,8 @@ These data consist of ChIP-seq and ChIP-chip profiles for histone modifications 
 
 For background on the ChIP-seq workflow by the consortium, please see Landt _et al._, [ChIP-seq guidelines and practices used by the ENCODE and modENCODE consortia](http://www.ncbi.nlm.nih.gov/pubmed/22955991), _Genome Research_, 2012.
 
-* __[ENCODE-X Browser](http://encode-x.med.harvard.edu/data_sets/chromatin/)__: We have developed a web application for theses chromatin datasets. The main advantage of our web application is that it will allow one to quick see what chromatin-related data are available using faceted browsing and use the IGV browser to view the data, for all three organisms. The chromatin state maps generated in Ho et al, 2014 are automatically loaded in the ENCODE-X Browser.
-* __[Antibody Validation Database](http://compbio.med.harvard.edu/antibodies)__: Antibodies used in the project were rigorously tested, and this database contains the validation data.  Please see Egelhofer <em>et al.</em>, An assessment of histone-modification antibody quality, <em>Nature Str &amp; Mol Biology</em>, 2011.
+* __[ENCODE-X Browser](http://encode-x.med.harvard.edu/data_sets/chromatin/)__: We have developed a web application for theses chromatin data sets. The main advantage of our web application is that it allows one to quickly see what chromatin-related data are available using faceted browsing, and use the [IGV borwser](http://www.broadinstitute.org/igv/) to view the data, for all three organisms.
+* __[Antibody Validation Database](http://compbio.med.harvard.edu/antibodies)__: Antibodies used in the project were rigorously tested, and this database contains the validation data.  Please see [Egelhofer <em>et al.</em>, An assessment of histone-modification antibody quality, <em>Nature Str &amp; Mol Biology</em>, 2011](http://www.ncbi.nlm.nih.gov/pubmed/21131980).
 * __[modENCODE Data Portal](http://data.modencode.org)__: This website also allows one to use faceted browsing to select datasets of interest (fly and worm only).
 * __[modMine](http://www.modmine.org)__: This warehouse by the modENCODE Data Coordinating Center contains a flexible query interface with access to extensive intermediate and metadata (fly and worm only).
 * __[ENCODE data portal](http://encodeproject.org/ENCODE/)__: This contains human and mouse ENCODE data.
@@ -38,33 +38,35 @@ For background on the ChIP-seq workflow by the consortium, please see Landt _et 
 
 ##  Available Data
 
-*   [ChIP-seq and ChIP-chip data](#ChIP-seq and ChIP-chip data)
-*   [Input normalized ChIP-seq and ChIP-chip fold enrichment profiles](#Input normalized ChIP-seq and ChIP-chip fold enrichment profiles)
-*   [GC-content](#GC-content)
-*   [PhastCons scores](#PhastCons scores)
-*   [Genomic sequence mappability tracks](#Genomic sequence mappability tracks)
-*   [Coordinates of unassembled genomic sequences](#Coordinates of unassembled genomic sequences)
-*   [Worm TSS definition based on capRNA-seq (capTSS)](#Worm TSS definition based on capRNA-seq (capTSS))
-*   [Hi-C defined topological domains](#Hi-C defined topological domains)
-*   [hiHMM chromatin state tracks](#hiHMM chromatin state tracks)
-*   [Cross-species chromatin browser](#Cross-species chromatin browser)
-*   [Protein-coding gene annotation and RNA-seq gene expression data](#Protein-coding gene annotation and RNA-seq gene expression data)
-*   [Human-Worm-Fly ortholog Lists](#Human-Worm-Fly ortholog Lists)
-*   [Human, Worm, and Fly Enhancers](#enhancers)   
+*   [ChIP-seq and ChIP-chip data](#ChIP)
+*   [Input normalized ChIP-seq and ChIP-chip fold enrichment profiles](#normalized data)
+*   [hiHMM chromatin state tracks](#hiHMM)
+*   [Heterochromatin domains](#heterochromatin)
+*   [Lamina Associated Domains (LAD)](#LAD)
+*   [Hi-C defined topological domains](#Hi-C)
+*   [Chromatin-based inferred topological domain boundaries](#inferred domains)
+*   [Enhancers](#enhancers)    
+*   [Gene anotation, gene expression data, and human-worm-fly ortholg map](#transcriptome)
+*   [Genomic sequence mappability tracks](#mappability)
+*   [Worm TSS definition based on capRNA-seq (capTSS)](#worm capTSS)
+*   [Other genomic features: GC-content and PhastCons scores](#others)
+*   [Other data: DNase-seq, GRO-seq, MNase-seq, and other data sets](#other data)
 
-## <a name="ChIP-seq and ChIP-chip data"></a> ChIP-seq and ChIP-chip data
 
-This table contains detailed meta-data for all chromatin datesets, including links to the source file.
+
+## <a name="ChIP"></a> ChIP-seq and ChIP-chip data
+
+This table contains a complete listing and detailed meta-data for all chromatin date sets, including links to the source files.
 
 View as a [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1FgYtnCKiIRCBpXmbAg1Eau14x-jZRV5tTSrcv2UJMTQ/edit?usp=sharing) or download as an [Excel file](http://compbio.med.harvard.edu/modencode/webpage/metaData_2014_06_02_for_website.xlsx).
 
-## <a name="Input normalized ChIP-seq and ChIP-chip fold enrichment profiles"></a> Input normalized ChIP-seq and ChIP-chip fold enrichment profiles
+## <a name="normalized data"></a> Input normalized ChIP-seq and ChIP-chip fold enrichment profiles
+
+The input normalized profiles are availabe at [ENCODE-X Browser](http://encode-x.med.harvard.edu/). The procedure for normalization of these profiles is as follows:
 
 ### ChIP-seq
 
-To enable the cross-species comparisons described in this paper, we have reprocessed all data using MACS. (Due to the slight differences in the peak-calling and input normalization steps, there may be slight discrepancies between the fly profiles analyzed here and profiles available at [modENCODE data portal](http://data.modencode.org) or [modMine](http://modmine.org)). 
-
-For every pair of aligned ChIP and matching input-DNA data, we used MACS version 2 to generate fold enrichment signal tracks for every position in a genome:
+To enable the cross-species comparisons described in this paper, we have reprocessed all data uniformly across all species using [MACS](http://www.ncbi.nlm.nih.gov/pubmed/18798982). For every pair of aligned ChIP and matching input-DNA data, we used MACS version 2 to generate fold enrichment signal tracks for every position in a genome:
 
 ```
 macs2 callpeak -t ChIP.bam -c Input.bam -B --nomodel --shiftsize 73 --SPMR -g hs -n ChIP
@@ -74,20 +76,101 @@ macs2 bdgcmp -t ChIP_treat_pileup.bdg -c ChIP_control_lambda.bdg -o ChIP_FE.bedg
 
 ### ChIP-chip
 
-For the fly data, genomic DNA Tiling Arrays v2.0 (Affymetrix) were used to hybridize ChIP and input DNA. We obtained the log-intensity ratio values (M-values) for all perfect match (PM) probes: M = log2(ChIP intensity) - log2(input intensity), and performed a whole-genome baseline shift so that the mean of M in each microarray is equal to 0. The smoothed log intensity ratios were calculated using LOWESS with a smoothing span corresponding to 500 bp, combining normalized data from two replicate experiments. For the worm data, a custom Nimblegen two-channel whole genome microarray platform was used to hybridize both ChIP and input DNA. MA2C was used to preprocess the data to obtain a normalized and median centered log2 ratio for each probe. All data are publicly accessible through the modENCODE data portal or modMine.
-
-The input normalized profiles are availabe at [ENCODE-X Browser](http://encode-x.med.harvard.edu/).
-
-### DNase-seq data
-
-Aligned DNase-seq data were downloaded from the modENCODE data portal and the [ENCODE UCSC download page](http://encodeproject.org/ENCODE/). Additional Drosophila embryo DNase-seq data were downloaded. After confirming consistency, reads from biological replicates were merged. We calculated minimally-smoothed signals (by a Gaussian kernel smoother with bandwidth of 10 bp in fly and 50 bp in human) along the genome in 10 bp (fly) or 50 bp (human) non-overlapping bins.
-
-### MNase-seq data
-
-The MNase-seq data were analyzed as described in [Tolstorukov _et al._, "Histone variant H2A.Bbd is associated with active transcription and mRNA processing in human cells", Molecular Cell (2012)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3708478). In brief, tags were mapped to the corresponding reference genome assemblies. The positions at which the number of mapped tags had a Z-score > 7 were considered anomalous due to potential amplification bias. The tags mapped to such positions were discarded. To compute profiles of nucleosomal frequency around TSS, the centers of the fragments were used in the case of paired-end data. In the case of single-end data, tag positions were shifted by the half of the estimated fragment size (estimated using cross-correlation analysis toward the fragment 3'-ends and tags mapping to positive and negative DNA strands were combined). Loess smoothing in the 11-bp window, which does not affect positions of the major minima and maxima on the plots, was applied to reduce the high-frequency noise in the profiles.
+For the fly data, genomic DNA Tiling Arrays v2.0 (Affymetrix) were used to hybridize ChIP and input DNA. We obtained the log-intensity ratio values (M-values) for all perfect match (PM) probes: M = log2(ChIP intensity) - log2(input intensity), and performed a whole-genome baseline shift so that the mean of M in each microarray is equal to 0. The smoothed log intensity ratios were calculated using LOWESS with a smoothing span corresponding to 500 bp, combining normalized data from two replicate experiments. For the worm data, a custom Nimblegen two-channel whole genome microarray platform was used to hybridize both ChIP and input DNA. [MA2C](http://www.ncbi.nlm.nih.gov/pubmed/17727723) was used to preprocess the data to obtain a normalized and median centered log2 ratio for each probe. All data are publicly accessible through the modENCODE data portal or modMine.
 
 
-## <a name="GC-content"></a> GC-content
+## <a name="hiHMM"></a> hiHMM chromatin state tracks
+
+We performed joint chromatin state segmentation on the human, fly, and worm ChIP-seq histone modification data using a hierarchically linked infinite hidden Markov model (hiHMM). The software and associated documentation is accessible [here](https://sites.google.com/site/kasohn/software).
+
+* [human (hg19) - GM12878](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.human_GM.bb)
+* [human (hg19) - H1-hESC](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.human_H1.bb)
+* [fly (dm3) - LE](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.fly_EL.bb)
+* [fly (dm3) - L3](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.fly_L3.bb)
+* [worm (ce10) - EE](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.worm_EE.bb)
+* [worm (ce10) - L3](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.worm_L3.bb)
+
+
+## <a name="heterochromatin"></a> Heterochromatin domains
+
+
+
+
+## <a name="LAD"></a> Lamina Associated Domains (LAD)
+
+
+
+
+## <a name="Hi-C"></a> Hi-C defined topological domains
+
+The data were downloaded from  [Dixon _et al._, "Topological domains in mammalian genomes identified by
+analysis of chromatin interactions", Nature (2012)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3356448) and [Sexton _et al._, "Three-dimensional folding and functional organization principles of the Drosophila genome", Cell (2012)](http://www.sciencedirect.com/science/article/pii/S0092867412000165). Here are the genomic coordinates used in our study:
+
+* [human (hg19) - IMR90](http://compbio.med.harvard.edu/modencode/webpage/hic/HiC_IMR90.bb)
+* [human (hg19) - H1-hESC](http://compbio.med.harvard.edu/modencode/webpage/hic/HiC_hESC.bb)
+* [fly (dm3) - LE](http://compbio.med.harvard.edu/modencode/webpage/hic/HiC_EL.bb)
+
+There is no known published Hi-C data for worm.
+
+## <a name="inferred domains"></a> Chromatin-based inferred topological domain boundaries
+
+
+
+
+
+## <a name="enhancers"></a> Enhancers
+
+Enhancers were identified using TSS-distal DHSs and p300 and CBP-1 binding sites. The positions listed in the files are a subset of TSS-distal DHSs (human, fly), p300 (human) and CBP-1 (worm) binding sites that are classified as enhancers.
+
+* [Enhancer Sites](http://compbio.med.harvard.edu/modencode/webpage/enh_calls_final/comparative_enhancer_calls.tar.gz) (tar.gz file)  
+
+The classification was optimized to obtain a high confidence set that is not necessarily very inclusive. For additional information please see the README file in the archive.
+
+
+
+
+
+
+## <a name="transcriptome"></a> Gene anotation, gene expression data, and human-worm-fly ortholg map
+
+Data and the description of these data can be found at the [modENCODE/ENCODE transcriptome page](../transcriptome).
+
+
+
+
+
+
+## <a name="mappability"></a> Genomic sequence mappability tracks
+
+We generated empirical genomic sequence mappability tracks using input-DNA sequencing data. After merging input reads up to 100M, reads were extended to 149 bp which corresponds to the shift of 74 bp in signal tracks. The union set of empirically mapped regions was obtained. They are available here:
+
+*   [human (hg19)](http://compbio.med.harvard.edu/modencode/webpage/mappability/mappability.hg19.wig.tdf)
+*   [fly (dm3)](http://compbio.med.harvard.edu/modencode/webpage/mappability/mappability.dm3.wig.tdf)
+*   [worm (ce10) ](http://compbio.med.harvard.edu/modencode/webpage/mappability/mappability.ce10.wig.tdf)
+
+In addition to this empirically derived genome-wide sequence mappability tracks, we could also compare them with known unassembled genomic regions by considering the “Gap” table from the [UCSC genome browser](http://hgdownload.cse.ucsc.edu/downloads.html):
+
+*   [human (hg19)](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/gap.txt.gz)
+*   [fly (dm3)](http://hgdownload.cse.ucsc.edu/goldenPath/dm3/database/) (search for chr*_gap.txt.gz)
+
+There are no known unassembled regions in worm.
+
+
+
+
+
+## <a name="worm capTSS)"></a> Worm TSS definition based on capRNA-seq (capTSS)
+
+We obtained worm TSS definition based on capRNA-seq from [Chen et al. "The landscape of RNA polymerase II transcription initiation in C. elegans reveals promoter and enhancer architectures"](http://www.ncbi.nlm.nih.gov/pubmed/23550086).
+
+Briefly, short 5'-capped RNA from total nuclear RNA of mixed stage embryos were sequenced (i.e., capRNA- seq) by Illumina GAIIA (SE36) with two biological replicates. [Reads](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE42819) from capRNA-seq were mapped to WS220 reference genome using BWA. [Transcription initiation regions (TICs)](http://genome.cshlp.org/content/suppl/2013/04/16/gr.153668.112.DC1/Supp_TableS2.xls) were identified by clustering of capRNA-seq reads. In this analysis we used TICs that overlap with wormbase TSSs within -199:100bp. We refer these capRNA-seq defined TSSs as capTSS in this study.
+
+
+
+
+## <a name="others"></a> Other genomic features: GC-content and PhastCons scores
+
+### <a name="gc"></a> GC content
 
 We downloaded the 5bp GC% data from the UCSC genome browser annotation download page ([http://hgdownload.cse.ucsc.edu/downloads.html](http://hgdownload.cse.ucsc.edu/downloads.html)) for:
 
@@ -98,7 +181,7 @@ We downloaded the 5bp GC% data from the UCSC genome browser annotation download 
 Centering at every 5 bp bin, we calculated the running median of the GC% of the surrounding 100 bp (i.e., 105 bp in total). GC scores were then binned into 10 bp (fly and worm) or 50 bp (human) non-overlapping bins.
 
 
-## <a name="PhastCons scores"></a> PhastCons scores
+### <a name="PhastCons scores"></a> PhastCons scores
 
 PhastCons scores were then binned into 10 bp (fly and worm) or 50 bp (human) non-overlapping bins.
 
@@ -106,74 +189,32 @@ PhastCons scores were then binned into 10 bp (fly and worm) or 50 bp (human) non
 *   [fly (dm3) ](http://hgdownload.cse.ucsc.edu/goldenPath/dm3/phastCons15way/)
 *   [worm (ce10)](http://hgdownload.cse.ucsc.edu/goldenPath/ce10/phastCons7way/)
 
-## <a name="Genomic sequence mappability tracks"></a> Genomic sequence mappability tracks
-
-We generated empirial genomic sequence mappability tracks using input-DNA sequencing data. After merging input reads up to 100M, reads were extended to 149 bp which corresponds to the shift of 74 bp in signal tracks. The union set of empirically mapped regions was obtained. They are available here:
-
-*   [human (hg19)](http://compbio.med.harvard.edu/modencode/webpage/mappability/mappability.hg19.wig.tdf)
-*   [fly (dm3)](http://compbio.med.harvard.edu/modencode/webpage/mappability/mappability.dm3.wig.tdf)
-*   [worm (ce10) ](http://compbio.med.harvard.edu/modencode/webpage/mappability/mappability.ce10.wig.tdf)
-
-## <a name="Coordinates of unassembled genomic sequences"></a>Coordinates of unassembled genomic sequences
-
-We downloaded the "Gap" table from the UCSC genome browser download page ([http://hgdownload.cse.ucsc.edu/downloads.html](http://hgdownload.cse.ucsc.edu/downloads.html)):
-
-*   [human (hg19)](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/gap.txt.gz)
-*   [fly (dm3)](http://hgdownload.cse.ucsc.edu/goldenPath/dm3/database/) (search for chr*_gap.txt.gz)
-
-There are no known unassembled regions in worm.
-
-## <a name="Worm TSS definition based on capRNA-seq (capTSS)"></a> Worm TSS definition based on capRNA-seq (capTSS)
-
-We obtained worm TSS definition based on capRNA-seq from [Chen et al. "The landscape of RNA polymerase II transcription initiation in C. elegans reveals promoter and enhancer architectures"](http://www.ncbi.nlm.nih.gov/pubmed/23550086).
-
-Briefly, short 5'-capped RNA from total nuclear RNA of mixed stage embryos were sequenced (i.e., capRNA- seq) by Illumina GAIIA (SE36) with two biological replicates. [Reads](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE42819) from capRNA-seq were mapped to WS220 reference genome using BWA. [Transcription initiation regions (TICs)](http://genome.cshlp.org/content/suppl/2013/04/16/gr.153668.112.DC1/Supp_TableS2.xls) were identified by clustering of capRNA-seq reads. In this analysis we used TICs that overlap with wormbase TSSs within -199:100bp. We refer these capRNA-seq defined TSSs as capTSS in this study.
-
-## <a name="Hi-C defined topological domains"></a> Hi-C defined topological domains
-
-The data were downloaded from  [Dixon _et al._, "Topological domains in mammalian genomes identified by
-analysis of chromatin interactions", Nature (2012)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3356448) and [Sexton _et al._, "Three-dimensional folding and functional organization principles of the Drosophila genome", Cell (2012)](http://www.sciencedirect.com/science/article/pii/S0092867412000165). Here are the genomic coordinates used in our study:
-
-* [human (hg19) - IMR90](http://compbio.med.harvard.edu/modencode/webpage/hic/HiC_IMR90.bb)
-* [human (hg19) - H1-hESC](http://compbio.med.harvard.edu/modencode/webpage/hic/HiC_hESC.bb)
-* [fly (dm3) - LE](http://compbio.med.harvard.edu/modencode/webpage/hic/HiC_EL.bb)
-
-There is no Hi-C data for worm.
-
-## <a name="hiHMM chromatin state tracks"></a> hiHMM chromatin state tracks
-
-* [human (hg19) - GM12878](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.human_GM.bb)
-* [human (hg19) - H1-hESC](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.human_H1.bb)
-* [fly (dm3) - LE](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.fly_EL.bb)
-* [fly (dm3) - L3](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.fly_L3.bb)
-* [worm (ce10) - EE](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.worm_EE.bb)
-* [worm (ce10) - L3](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.worm_L3.bb)
-
-The code and instruction for running hiHMM can be accessed [here](https://sites.google.com/site/kasohn/software).
-
-## <a name="Cross-species chromatin browser"></a> Cross-species chromatin browser
-
-The chromatin state definition can be accessed via the [ENCODE-X Browser](http://encode-x.med.harvard.edu/data_sets/chromatin/).
 
 
-## <a name="Protein-coding gene annotation and RNA-seq gene expression data"></a> Protein-coding gene annotation and RNA-seq gene expression data
+## <a name="other data"></a> Other data: DNase-seq, GRO-seq, MNase-seq, and other data sets
 
-Gene expression data can be accessed from the [modENCODE/ENCODE transcriptome page](../transcriptome).
 
-*   Human protein-coding gene annotation, in gtf format, from GENCODE v10: [gen10_CDS+exons_only_protein-coding_only.gtf.gz](http://cmptxn.gersteinlab.org/Comparative_Datasets.xlsx)
-*   Worm protein-coding gene annotation, in gtf format, from modENCODE June 2012 freeze: [AG1201.integrated_transcripts_strictly_coding.ws220.gtf.gz](http://cmptxn.gersteinlab.org/AG1201.integrated_transcripts_strictly_coding.ws220.gtf.gz)
-*   Fly protein-coding gene annotation, in gtf format, from modENCODE June 2012 freeze: [coding_Celniker_Drosophila_Annotation_20120616_1428.gtf.gz](http://cmptxn.gersteinlab.org/coding_Celniker_Drosophila_Annotation_20120616_1428.gtf.gz)
+### DNase-seq data
 
-## <a name="Human-Worm-Fly ortholog lists"></a> Human-Worm-Fly ortholog lists
+Aligned DNase-seq data were downloaded from the modENCODE data portal and the [ENCODE UCSC download page](http://encodeproject.org/ENCODE/). Additional Drosophila embryo DNase-seq data were downloaded. After confirming consistency, reads from biological replicates were merged. We calculated minimally-smoothed signals (by a Gaussian kernel smoother with bandwidth of 10 bp in fly and 50 bp in human) along the genome in 10 bp (fly) or 50 bp (human) non-overlapping bins.
 
-MIT Human-Worm-Fly Orthologs: [Modencode.merged.orth20120611_wfh_comm_all.csv](http://cmptxn.gersteinlab.org/Modencode.merged.orth20120611_wfh_comm_all.csv)
+### MNase-seq data
 
-## <a name="enhancers"></a> Human, Worm, and Fly Enhancers
+The MNase-seq data were analyzed as described in [Tolstorukov _et al._, "Histone variant H2A.Bbd is associated with active transcription and mRNA processing in human cells", Molecular Cell (2012)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3708478). In brief, tags were mapped to the corresponding reference genome assemblies. The positions at which the number of mapped tags had a Z-score > 7 were considered anomalous due to potential amplification bias. The tags mapped to such positions were discarded. To compute profiles of nucleosomal frequency around TSS, the centers of the fragments were used in the case of paired-end data. In the case of single-end data, tag positions were shifted by the half of the estimated fragment size (estimated using cross-correlation analysis toward the fragment 3'-ends and tags mapping to positive and negative DNA strands were combined). Loess smoothing in the 11-bp window, which does not affect positions of the major minima and maxima on the plots, was applied to reduce the high-frequency noise in the profiles.
 
-Enhancers were identified using TSS-distal DHSs and p300 and CBP-1 binding sites. The positions listed in the files are a subset of TSS-distal DHSs (human, fly), p300 (human) and CBP-1 (worm) binding sites that are classified as enhancers.
 
-* [Enhancer Sites](http://compbio.med.harvard.edu/modencode/webpage/enh_calls_final/comparative_enhancer_calls.tar.gz) (tar.gz file)  
 
-The classification was optimized to obtain a high confidence set that is not necessarily very inclusive. For additional information please see the README file in the archive.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
