@@ -36,7 +36,7 @@ For background on the ChIP-seq workflow by the consortium, please see Landt _et 
 * __[ENCODE data portal](http://encodeproject.org/ENCODE/)__: This contains human and mouse ENCODE data.
 * __[Gene Expression Omnibus (GEO)](http://www.ncbi.nlm.nih.gov/geo/)__ and __[Short Read Archive (SRA)](http://www.ncbi.nlm.nih.gov/sra)__: Raw data are available from these two sites. Links to specific datasets are available from the above sites.
 
-##  Available Data
+##  <a name="Top"></a> Available Data
 
 *   [ChIP-seq and ChIP-chip data](#ChIP)
 *   [Input normalized ChIP-seq and ChIP-chip fold enrichment profiles](#normalized data)
@@ -59,6 +59,12 @@ This table contains a complete listing and detailed meta-data for all chromatin 
 
 View as a [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1FgYtnCKiIRCBpXmbAg1Eau14x-jZRV5tTSrcv2UJMTQ/edit?usp=sharing) or download as an [Excel file](http://compbio.med.harvard.edu/modencode/webpage/metaData_2014_06_02_for_website.xlsx).
 
+[Top](Top) 
+
+
+
+
+
 ## <a name="normalized data"></a> Input normalized ChIP-seq and ChIP-chip fold enrichment profiles
 
 The input normalized profiles are availabe at [ENCODE-X Browser](http://encode-x.med.harvard.edu/). The procedure for normalization of these profiles is as follows:
@@ -77,6 +83,11 @@ macs2 bdgcmp -t ChIP_treat_pileup.bdg -c ChIP_control_lambda.bdg -o ChIP_FE.bedg
 
 For the fly data, genomic DNA Tiling Arrays v2.0 (Affymetrix) were used to hybridize ChIP and input DNA. We obtained the log-intensity ratio values (M-values) for all perfect match (PM) probes: M = log2(ChIP intensity) - log2(input intensity), and performed a whole-genome baseline shift so that the mean of M in each microarray is equal to 0. The smoothed log intensity ratios were calculated using LOWESS with a smoothing span corresponding to 500 bp, combining normalized data from two replicate experiments. For the worm data, a custom Nimblegen two-channel whole genome microarray platform was used to hybridize both ChIP and input DNA. [MA2C](http://www.ncbi.nlm.nih.gov/pubmed/17727723) was used to preprocess the data to obtain a normalized and median centered log2 ratio for each probe.
 
+[Top](Top) 
+
+
+
+
 
 ## <a name="hiHMM"></a> hiHMM chromatin state tracks
 
@@ -89,6 +100,13 @@ We performed joint chromatin state segmentation on the human, fly, and worm ChIP
 * [worm (ce10) - EE](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.worm_EE.bed)
 * [worm (ce10) - L3](http://compbio.med.harvard.edu/modencode/webpage/hihmm/iHMM.M1K16.worm_L3.bed)
 
+[Top](Top) 
+
+
+
+
+
+
 
 ## <a name="heterochromatin"></a> Heterochromatin domains
 
@@ -98,6 +116,10 @@ To identify broad H3K9me3+ heterochromatin domains, we first identified broad H3
 * [human (hg19) - K562](http://compbio.med.harvard.edu/modencode/webpage/heterochromatin/het.call.human.K562.bed)
 * [fly (dm3) - L3](http://compbio.med.harvard.edu/modencode/webpage/heterochromatin/het.call.fly.L3.bed)
 * [worm (ce10) - L3](http://compbio.med.harvard.edu/modencode/webpage/heterochromatin/het.call.worm.L3.bed)
+
+[Top](Top) 
+
+
 
 
 
@@ -109,6 +131,9 @@ Genomic coordinates of LADs were directly obtained from their original publicati
 * [human (hg19) - fibroblast](http://compbio.med.harvard.edu/modencode/webpage/lad/human.fibroblast.DamID.hg19.bed )
 * [fly (dm3) - Kc](http://compbio.med.harvard.edu/modencode/webpage/lad/fly.kc.DamID.dm3.bed)
 * [worm (ce10) - mixed embryos](http://compbio.med.harvard.edu/modencode/webpage/lad/worm.mixedE.LEM2.ce10.bed)
+
+[Top](Top) 
+
 
 
 
@@ -124,6 +149,9 @@ analysis of chromatin interactions", Nature (2012)](http://www.ncbi.nlm.nih.gov/
 
 There is no known published Hi-C data for worm.
 
+[Top](Top) 
+
+
 
 
 
@@ -137,6 +165,9 @@ Based on the observation that each Hi-C-defined topological domain is usually un
 * worm (ce10) EE: [boundary score](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Worm/EE/worm_eucl_nor_EE_boundary_score.wig), [boundary call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Worm/EE/worm_eucl_nor_EE_boundary_7.bed), and [domain call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Worm/EE/worm_eucl_nor_EE_domain_7.bed)
 * worm (ce10) L3: [boundary score](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Worm/L3/worm_eucl_nor_L3_boundary_score.wig), [boundary call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Worm/L3/worm_eucl_nor_L3_boundary_7.bed), and [domain call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Worm/L3/worm_eucl_nor_L3_domain_7.bed)
 
+[Top](Top) 
+
+
 
 
 
@@ -148,6 +179,9 @@ Enhancers were identified using TSS-distal DHSs and p300 and CBP-1 binding sites
 
 The classification was optimized to obtain a high confidence set that is not necessarily very inclusive. For additional information please see the README file in the archive.
 
+[Top](Top) 
+
+
 
 
 
@@ -156,6 +190,9 @@ The classification was optimized to obtain a high confidence set that is not nec
 ## <a name="transcriptome"></a> Gene anotation, gene expression data, and human-worm-fly ortholg map
 
 Data and the description of these data can be found at the [modENCODE/ENCODE transcriptome page](../transcriptome).
+
+[Top](Top) 
+
 
 
 
@@ -177,6 +214,11 @@ In addition to this empirically derived genome-wide sequence mappability tracks,
 
 There are no known unassembled regions in worm.
 
+[Top](Top) 
+
+
+
+
 
 
 
@@ -185,6 +227,10 @@ There are no known unassembled regions in worm.
 We obtained worm TSS definition based on capRNA-seq from [Chen et al. "The landscape of RNA polymerase II transcription initiation in C. elegans reveals promoter and enhancer architectures"](http://www.ncbi.nlm.nih.gov/pubmed/23550086).
 
 Briefly, short 5'-capped RNA from total nuclear RNA of mixed stage embryos were sequenced (i.e., capRNA- seq) by Illumina GAIIA (SE36) with two biological replicates. [Reads](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE42819) from capRNA-seq were mapped to WS220 reference genome using BWA. [Transcription initiation regions (TICs)](http://genome.cshlp.org/content/suppl/2013/04/16/gr.153668.112.DC1/Supp_TableS2.xls) were identified by clustering of capRNA-seq reads. In this analysis we used TICs that overlap with wormbase TSSs within -199:100bp. We refer these capRNA-seq defined TSSs as capTSS in this study.
+
+[Top](Top) 
+
+
 
 
 
@@ -198,7 +244,6 @@ We downloaded the 5bp GC% data from the [UCSC genome browser annotation download
 
 ### <a name="PhastCons scores"></a> PhastCons scores
 
-
 PhastCons conservation score was obtained from the [UCSC genome browser annotation download page](http://hgdownload.cse.ucsc.edu/downloads.html). Specifically, we used the following score for each species.
 
 
@@ -208,7 +253,7 @@ PhastCons conservation score was obtained from the [UCSC genome browser annotati
 
 PhastCons scores were then binned into 10 bp (fly and worm) or 50 bp (human) non-overlapping bins.
 
-
+[Top](Top) 
 
 
 
