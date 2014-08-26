@@ -42,15 +42,14 @@ For background on the ChIP-seq workflow by the consortium, please see Landt _et 
 *   [Input normalized ChIP-seq and ChIP-chip fold enrichment profiles](#normalized data)
 *   [hiHMM chromatin state tracks](#hiHMM)
 *   [Heterochromatin domains](#heterochromatin)
-*   [Lamina Associated Domains (LAD)](#LAD)
+*   [Lamina Associated Domains (LADs)](#LAD)
 *   [Hi-C defined topological domains](#Hi-C)
-*   [Chromatin-based inferred topological domain boundaries](#inferred domains)
+*   [Chromatin-based inferred topological domains and their boundaries](#inferred domains)
 *   [Enhancers](#enhancers)    
 *   [Gene anotation, gene expression data, and human-worm-fly ortholg map](#transcriptome)
 *   [Genomic sequence mappability tracks](#mappability)
 *   [Worm TSS definition based on capRNA-seq (capTSS)](#worm capTSS)
 *   [Other genomic features: GC-content and PhastCons scores](#others)
-*   [Other data: DNase-seq, GRO-seq, MNase-seq, and other data sets](#other data)
 
 
 
@@ -76,7 +75,7 @@ macs2 bdgcmp -t ChIP_treat_pileup.bdg -c ChIP_control_lambda.bdg -o ChIP_FE.bedg
 
 ### ChIP-chip
 
-For the fly data, genomic DNA Tiling Arrays v2.0 (Affymetrix) were used to hybridize ChIP and input DNA. We obtained the log-intensity ratio values (M-values) for all perfect match (PM) probes: M = log2(ChIP intensity) - log2(input intensity), and performed a whole-genome baseline shift so that the mean of M in each microarray is equal to 0. The smoothed log intensity ratios were calculated using LOWESS with a smoothing span corresponding to 500 bp, combining normalized data from two replicate experiments. For the worm data, a custom Nimblegen two-channel whole genome microarray platform was used to hybridize both ChIP and input DNA. [MA2C](http://www.ncbi.nlm.nih.gov/pubmed/17727723) was used to preprocess the data to obtain a normalized and median centered log2 ratio for each probe. All data are publicly accessible through the modENCODE data portal or modMine.
+For the fly data, genomic DNA Tiling Arrays v2.0 (Affymetrix) were used to hybridize ChIP and input DNA. We obtained the log-intensity ratio values (M-values) for all perfect match (PM) probes: M = log2(ChIP intensity) - log2(input intensity), and performed a whole-genome baseline shift so that the mean of M in each microarray is equal to 0. The smoothed log intensity ratios were calculated using LOWESS with a smoothing span corresponding to 500 bp, combining normalized data from two replicate experiments. For the worm data, a custom Nimblegen two-channel whole genome microarray platform was used to hybridize both ChIP and input DNA. [MA2C](http://www.ncbi.nlm.nih.gov/pubmed/17727723) was used to preprocess the data to obtain a normalized and median centered log2 ratio for each probe.
 
 
 ## <a name="hiHMM"></a> hiHMM chromatin state tracks
@@ -93,6 +92,8 @@ We performed joint chromatin state segmentation on the human, fly, and worm ChIP
 
 ## <a name="heterochromatin"></a> Heterochromatin domains
 
+To identify broad H3K9me3+ heterochromatin domains, we first identified broad H3K9me3 enrichment region using [SPP](http://compbio.med.harvard.edu/Supplements/ChIP-seq/) ([Kharchenko _et al._](http://www.ncbi.nlm.nih.gov/pubmed/19029915)), based on methods _get.broad.enrichment.cluster_ with a 10 kb window for fly and worm and 100 kb for human. Then regions that are less than 10 kb of length were removed. The remaining regions were identified as the heterochromatin regions.
+
 * [human (hg19) - H1-hESC](http://compbio.med.harvard.edu/modencode/webpage/heterochromatin/het.call.human.H1-hESC.bed)
 * [human (hg19) - K562](http://compbio.med.harvard.edu/modencode/webpage/heterochromatin/het.call.human.K562.bed)
 * [fly (dm3) - L3](http://compbio.med.harvard.edu/modencode/webpage/heterochromatin/het.call.fly.L3.bed)
@@ -101,22 +102,21 @@ We performed joint chromatin state segmentation on the human, fly, and worm ChIP
 
 
 
-## <a name="LAD"></a> Lamina Associated Domains (LAD)
+## <a name="LAD"></a> Lamina Associated Domains (LADs)
+
+Genomic coordinates of LADs were directly obtained from their original publications, for worm ([Ikegami _et al._](http://www.ncbi.nlm.nih.gov/pubmed/21176223)), fly ([van Bemmel _et al._](http://www.ncbi.nlm.nih.gov/pubmed/21124834)) and human ([Guelen _et al._](http://www.ncbi.nlm.nih.gov/pubmed/18463634)). We converted the genomic coordinates of LADs to ce10 (for worm), dm3 (for fly) and hg19 (for human) using [UCSC's liftOver tool](http://genome.ucsc.edu/cgi-bin/hgLiftOver) with default parameters.
 
 * [human (hg19) - fibroblast](http://compbio.med.harvard.edu/modencode/webpage/lad/human.fibroblast.DamID.hg19.bed )
 * [fly (dm3) - Kc](http://compbio.med.harvard.edu/modencode/webpage/lad/fly.kc.DamID.dm3.bed)
 * [worm (ce10) - mixed embryos](http://compbio.med.harvard.edu/modencode/webpage/lad/worm.mixedE.LEM2.ce10.bed)
 
 
-human.helas.laminAC.hg19.bed  ?
-human.helas.laminB.hg19.bed   ?
-
 
 
 ## <a name="Hi-C"></a> Hi-C defined topological domains
 
-The data were downloaded from  [Dixon _et al._, "Topological domains in mammalian genomes identified by
-analysis of chromatin interactions", Nature (2012)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3356448) and [Sexton _et al._, "Three-dimensional folding and functional organization principles of the Drosophila genome", Cell (2012)](http://www.sciencedirect.com/science/article/pii/S0092867412000165). Here are the genomic coordinates used in our study:
+The data were downloaded from [Dixon _et al._, "Topological domains in mammalian genomes identified by
+analysis of chromatin interactions", Nature (2012)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3356448) (for human embryonic stem cells) and [Sexton _et al._, "Three-dimensional folding and functional organization principles of the Drosophila genome", Cell (2012)](http://www.sciencedirect.com/science/article/pii/S0092867412000165) (for fly late embryos). The human coordinates were originally in hg18. We used [UCSC's liftOver tool](http://genome.ucsc.edu/cgi-bin/hgLiftOver) to convert the coordinates to hg19. Here are the genomic coordinates used in our study:
 
 * [human (hg19) - IMR90](http://compbio.med.harvard.edu/modencode/webpage/hic/IMR90_domains_hg19.bed)
 * [human (hg19) - H1-hESC](http://compbio.med.harvard.edu/modencode/webpage/hic/hESC_domains_hg19.bed)
@@ -127,14 +127,15 @@ There is no known published Hi-C data for worm.
 
 
 
-## <a name="inferred domains"></a> Chromatin-based inferred topological domain boundaries
+## <a name="inferred domains"></a> Chromatin-based inferred topological domains and their boundaries
+
+Based on the observation that each Hi-C-defined topological domain is usually uniformly enriched for similar chromatin-states, we tested the idea of whether correlation between histone modifications between different chromosomal regions (within each chromosome) could be used to infer topological domains and their boundaries. Here are the inferred domain definition and the boundaries.
+
 
 * fly (dm3) LE: [boundary score](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Fly/LE/fly_eucl_nor_boundary_score.wig), [boundary call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Fly/LE/fly_eucl_nor_boundary_7.bed), and [domain call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Fly/LE/fly_eucl_nor_domain_7.bed)
 * fly (dm3) L3: [boundary score](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Fly/L3/fly_eucl_nor_boundary_score.wig), [boundary call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Fly/L3/fly_eucl_nor_boundary_7.bed), and [domain call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Fly/L3/fly_eucl_nor_domain_7.bed)
 * worm (ce10) EE: [boundary score](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Worm/EE/worm_eucl_nor_EE_boundary_score.wig), [boundary call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Worm/EE/worm_eucl_nor_EE_boundary_7.bed), and [domain call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Worm/EE/worm_eucl_nor_EE_domain_7.bed)
 * worm (ce10) L3: [boundary score](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Worm/L3/worm_eucl_nor_L3_boundary_score.wig), [boundary call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Worm/L3/worm_eucl_nor_L3_boundary_7.bed), and [domain call](http://compbio.med.harvard.edu/modencode/webpage/chromatinboundaries/Worm/L3/worm_eucl_nor_L3_domain_7.bed)
-
-
 
 
 
@@ -171,8 +172,8 @@ We generated empirical genomic sequence mappability tracks using input-DNA seque
 
 In addition to this empirically derived genome-wide sequence mappability tracks, we could also compare them with known unassembled genomic regions by considering the “Gap” table from the [UCSC genome browser](http://hgdownload.cse.ucsc.edu/downloads.html):
 
-*   [human (hg19)](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/gap.txt.gz)
-*   [fly (dm3)](http://hgdownload.cse.ucsc.edu/goldenPath/dm3/database/) (search for chr*_gap.txt.gz)
+*   [human (hg19)](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/gap.txt.gz) (234 Mb of known unassembled regions)
+*   [fly (dm3)](http://hgdownload.cse.ucsc.edu/goldenPath/dm3/database/) (search for chr*_gap.txt.gz) (6.3 Mb of known unassembled regions)
 
 There are no known unassembled regions in worm.
 
@@ -195,35 +196,20 @@ Briefly, short 5'-capped RNA from total nuclear RNA of mixed stage embryos were 
 
 ### <a name="gc"></a> GC content
 
-We downloaded the 5bp GC% data from the UCSC genome browser annotation download page ([http://hgdownload.cse.ucsc.edu/downloads.html](http://hgdownload.cse.ucsc.edu/downloads.html)) for:
-
-*   [human (hg19) [~1.5GB]](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/gc5Base/hg19.gc5Base.txt.gz)
-*   [fly (dm3) [~670KB]](http://hgdownload.cse.ucsc.edu/goldenPath/dm3/database/gc5Base.txt.gz)
-*   [worm (ce10) [~54MB]](http://hgdownload.cse.ucsc.edu/gbdb/ce10/bbi/gc5Base.bw) (in bigWig format, need to convert into wig using the [bigwig2wig](http://hgdownload.cse.ucsc.edu/admin/exe) program)
-
-Centering at every 5 bp bin, we calculated the running median of the GC% of the surrounding 100 bp (i.e., 105 bp in total). GC scores were then binned into 10 bp (fly and worm) or 50 bp (human) non-overlapping bins.
+We downloaded the 5bp GC% data from the [UCSC genome browser annotation download page](http://hgdownload.cse.ucsc.edu/downloads.html) for human (hg19), fly (dm3), and worm (ce10). Centering at every 5 bp bin, we calculated the running median of the GC% of the surrounding 100 bp (i.e., 105 bp in total). GC scores were then binned into 10 bp (fly and worm) or 50 bp (human) non-overlapping bins.
 
 
 ### <a name="PhastCons scores"></a> PhastCons scores
 
-PhastCons scores were then binned into 10 bp (fly and worm) or 50 bp (human) non-overlapping bins.
+
+PhastCons conservation score was obtained from the [UCSC genome browser annotation download page](http://hgdownload.cse.ucsc.edu/downloads.html). Specifically, we used the following score for each species.
+
 
 *   [human (hg19)](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/phastCons46way/vertebrate/)
 *   [fly (dm3) ](http://hgdownload.cse.ucsc.edu/goldenPath/dm3/phastCons15way/)
 *   [worm (ce10)](http://hgdownload.cse.ucsc.edu/goldenPath/ce10/phastCons7way/)
 
-
-
-## <a name="other data"></a> Other data: DNase-seq, GRO-seq, MNase-seq, and other data sets
-
-
-### DNase-seq data
-
-Aligned DNase-seq data were downloaded from the modENCODE data portal and the [ENCODE UCSC download page](http://encodeproject.org/ENCODE/). Additional Drosophila embryo DNase-seq data were downloaded. After confirming consistency, reads from biological replicates were merged. We calculated minimally-smoothed signals (by a Gaussian kernel smoother with bandwidth of 10 bp in fly and 50 bp in human) along the genome in 10 bp (fly) or 50 bp (human) non-overlapping bins.
-
-### MNase-seq data
-
-The MNase-seq data were analyzed as described in [Tolstorukov _et al._, "Histone variant H2A.Bbd is associated with active transcription and mRNA processing in human cells", Molecular Cell (2012)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3708478). In brief, tags were mapped to the corresponding reference genome assemblies. The positions at which the number of mapped tags had a Z-score > 7 were considered anomalous due to potential amplification bias. The tags mapped to such positions were discarded. To compute profiles of nucleosomal frequency around TSS, the centers of the fragments were used in the case of paired-end data. In the case of single-end data, tag positions were shifted by the half of the estimated fragment size (estimated using cross-correlation analysis toward the fragment 3'-ends and tags mapping to positive and negative DNA strands were combined). Loess smoothing in the 11-bp window, which does not affect positions of the major minima and maxima on the plots, was applied to reduce the high-frequency noise in the profiles.
+PhastCons scores were then binned into 10 bp (fly and worm) or 50 bp (human) non-overlapping bins.
 
 
 
