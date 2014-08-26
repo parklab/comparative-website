@@ -145,7 +145,7 @@ analysis of chromatin interactions", Nature (2012)](http://www.ncbi.nlm.nih.gov/
 
 * [human (hg19) - IMR90](http://compbio.med.harvard.edu/modencode/webpage/hic/IMR90_domains_hg19.bed)
 * [human (hg19) - H1-hESC](http://compbio.med.harvard.edu/modencode/webpage/hic/hESC_domains_hg19.bed)
-* [fly (dm3) - LE](http://compbio.med.harvard.edu/modencode/webpage/hic/HiC_EL.bb): in bigBED format
+* [fly (dm3) - LE](http://compbio.med.harvard.edu/modencode/webpage/hic/HiC_EL.bed)
 
 There is no known published Hi-C data for worm.
 
