@@ -180,10 +180,7 @@ There are no known unassembled regions in worm.
 
 
 
-
-
-
-## <a name="worm capTSS)"></a> Worm TSS definition based on capRNA-seq (capTSS)
+## <a name="worm capTSS"></a> Worm TSS definition based on capRNA-seq (capTSS)
 
 We obtained worm TSS definition based on capRNA-seq from [Chen et al. "The landscape of RNA polymerase II transcription initiation in C. elegans reveals promoter and enhancer architectures"](http://www.ncbi.nlm.nih.gov/pubmed/23550086).
 
