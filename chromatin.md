@@ -14,9 +14,9 @@ paper:
 
   authors_short: Ho et al.
 
-  meta: Nature, in press, 2014
+  meta: Nature 512:449–452, 2014
 
-  url: 
+  url: http://www.nature.com/nature/journal/v512/n7515/full/nature13415.html
 ---
 
 ## Overall Description

@@ -14,9 +14,9 @@ paper:
 
   authors_short: Gerstein et al.
 
-  meta: Nature, in press, 2014
+  meta: Nature 512:445–448, 2014
 
-  url:   
+  url: http://www.nature.com/nature/journal/v512/n7515/full/nature13424.html
 ---
     
 _Additional details on data generation and analysis can be found in the [paper supplement](http://cmptxn.gersteinlab.org/rawdata/submit/Gerstein_CmpTxn_Supplement.pdf)._

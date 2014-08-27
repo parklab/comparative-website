@@ -14,9 +14,9 @@ paper:
 
   authors_short: Boyle et al.
 
-  meta: Nature, in press, 2014
+  meta: Nature 512:453–456, 2014
 
-  url:   
+  url: http://www.nature.com/nature/journal/v512/n7515/full/nature13668.html  
 ---
 
 The data below provide data from all stages of the uniformly processed ENCODE and  modENCODE data for human,  worm (_C. elegans_) and fly (_D. melanogaster_) until the July 2012 Freeze that is being used in the joint modENCODE/ENCODE analysis papers.
